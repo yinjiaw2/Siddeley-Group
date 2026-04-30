@@ -1,18 +1,18 @@
 {
   "nav": {
     "home": "首页",
-    "services": "我们的服务",
+    "services": "可持续发展战略",
     "serviceSocial": "社交媒体",
-    "serviceAds": " 付费广告",
+    "serviceAds": "付费广告",
     "serviceCreative": "创意内容",
     "serviceEcommerce": "电子商务",
     "serviceEmail": "邮件营销",
     "serviceVideoProduction": "视频制作",
     "serviceWebsiteDevelopment": "网站开发",
-    "serviceProcess": "服务流程",
+    "serviceProcess": "合作伙伴",
     "successCases": "成功案例",
     "about": "关于我们",
-    "contact": "联系我们"
+    "contact": "新闻"
   },
   "localeSwitch": {
     "ariaLabel": "切换语言",

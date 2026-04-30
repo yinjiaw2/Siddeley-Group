@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Our Services",
+    "services": "ESG",
     "serviceSocial": "Social Media",
     "serviceAds": "Paid Ads",
     "serviceCreative": "Creative",
@@ -9,10 +9,10 @@
     "serviceEmail": "Email Marketing",
     "serviceVideoProduction": "Video Production",
     "serviceWebsiteDevelopment": "Website Development",
-    "serviceProcess": "Service Process",
+    "serviceProcess": "Partnership",
     "successCases": "Success Cases",
     "about": "About Us",
-    "contact": "Contact Us"
+    "contact": "News"
   },
   "localeSwitch": {
     "ariaLabel": "Switch language",

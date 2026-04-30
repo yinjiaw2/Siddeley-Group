@@ -1,8 +1,16 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-export function GoodMoodLogoAnimation() {
+type GoodMoodLogoAnimationProps = {
+  className?: string;
+  accentClassName?: string;
+};
+
+export function GoodMoodLogoAnimation({
+  className = "text-white",
+  accentClassName = "text-[#F9C110]",
+}: GoodMoodLogoAnimationProps) {
   const ref = useRef<SVGSVGElement>(null);
   const [animate, setAnimate] = useState(false);
 
@@ -16,7 +24,7 @@ export function GoodMoodLogoAnimation() {
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -28,7 +36,7 @@ export function GoodMoodLogoAnimation() {
       viewBox="0 0 1841 503"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-7 w-auto"
+      className={`h-7 w-auto ${className}`}
       aria-label="Good Mood logo"
       data-animate={animate}
     >
@@ -96,16 +104,67 @@ export function GoodMoodLogoAnimation() {
         `}</style>
       </defs>
 
-      <path d="M 436.8 266.3 A 187.5 187.5 0 1 1 382.6 117.4" stroke="white" strokeWidth="125" fill="none" className="lc1" />
+      <path
+        d="M 436.8 266.3 A 187.5 187.5 0 1 1 382.6 117.4"
+        stroke="currentColor"
+        strokeWidth="125"
+        fill="none"
+        className="lc1"
+      />
 
-      <path d="M 258 205 L 447 205 A 46 46 0 0 1 447 297 L 258 297 Z" fill="#F9C110" className="leye" />
-      <circle cx="690" cy="250" r="187.5" stroke="white" strokeWidth="125" className="lc2" />
-      <circle cx="1115" cy="253" r="187.5" stroke="#F9C110" strokeWidth="125" className="lc3" />
-      <rect x="1326.5" y="20.5" width="123" height="465" fill="white" stroke="white" className="lbar" />
-      <circle cx="1591" cy="250" r="187.5" stroke="white" strokeWidth="125" className="lc4" />
+      <path
+        d="M 258 205 L 447 205 A 46 46 0 0 1 447 297 L 258 297 Z"
+        fill="currentColor"
+        className={`leye ${accentClassName}`}
+      />
+      <circle
+        cx="690"
+        cy="250"
+        r="187.5"
+        stroke="currentColor"
+        strokeWidth="125"
+        className="lc2"
+      />
+      <circle
+        cx="1115"
+        cy="253"
+        r="187.5"
+        stroke="currentColor"
+        strokeWidth="125"
+        className={`lc3 ${accentClassName}`}
+      />
+      <rect
+        x="1326.5"
+        y="20.5"
+        width="123"
+        height="465"
+        fill="currentColor"
+        stroke="currentColor"
+        className="lbar"
+      />
+      <circle
+        cx="1591"
+        cy="250"
+        r="187.5"
+        stroke="currentColor"
+        strokeWidth="125"
+        className="lc4"
+      />
 
-      <path d="M644 316C679.928 344.402 700.072 343.332 736 316" stroke="white" strokeWidth="20" strokeLinecap="round" className="lsmile1" />
-      <path d="M1069 336.902C1104.93 308.5 1125.07 309.57 1161 336.902" stroke="white" strokeWidth="20" strokeLinecap="round" className="lsmile2" />
+      <path
+        d="M644 316C679.928 344.402 700.072 343.332 736 316"
+        stroke="currentColor"
+        strokeWidth="20"
+        strokeLinecap="round"
+        className="lsmile1"
+      />
+      <path
+        d="M1069 336.902C1104.93 308.5 1125.07 309.57 1161 336.902"
+        stroke="currentColor"
+        strokeWidth="20"
+        strokeLinecap="round"
+        className={`lsmile2 ${accentClassName}`}
+      />
     </svg>
   );
 }
