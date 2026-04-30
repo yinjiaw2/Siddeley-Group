@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "badge": "电子商务",
+    "titlePrefix": "把注意力放大成",
+    "titleHighlight": "电子商务成果。",
+    "subtitle": "我们致力于构建并优化高转化率的电商环境，通过打造高影响力的落地页与战略性 SEO 布局，将潜在访客转化为真实买家。通过深度集成数据分析与用户行为洞察，我们持续精炼您的销售漏斗，确保业务表现无缝衔接，实现可扩展的长期增长。",
+    "cta": "免费咨询",
+    "ctaSecondary": "查看所有服务"
+  },
+  "details": {
+    "badge": "服务概述",
+    "title": "我们做什么，以及为什么重要",
+    "card1Title": "痛点所在",
+    "card1Desc": "很多电商品牌虽然有流量进入网站，但因为落地页薄弱、产品表达不清晰、购物路径不顺畅以及搜索曝光不足，最终很难把浏览转化为稳定订单。",
+    "card2Title": "我们的做法",
+    "card2Desc": "我们围绕电商转化全链路优化网站结构、落地页设计、产品页表达、SEO 布局与表现分析，让对的用户更容易找到您、理解您，并顺利完成购买。",
+    "card3Title": "您能得到什么",
+    "card3Desc": "您将获得更强的线上店铺转化能力、更清晰的购买路径、更好的自然搜索可见度，以及一套更稳定支持电商增长的销售漏斗。"
+  },
+  "subFeatures": {
+    "badge": "服务内容",
+    "title": "每一项交付物，",
+    "titleHighlight": "清楚说明。",
+    "count": "3",
+    "item1Title": "战略性网页架构与增长",
+    "item1Desc": "最大化挖掘网站潜力。通过优化落地页并精简转化漏斗，我们对您现有的基础设施进行深度分析与改良，以提升业务表现和用户参与度，为您构建一个专业、可扩展且结果导向的线上阵地。",
+    "item2Title": "搜索引擎优化 (SEO)",
+    "item2Desc": "将技术性 SEO 与价值导向的内容深度融合，提升您的品牌搜索排名。我们从精准关键词定位到全方位的网站审计，全方位优化您的自然搜索表现，提供将搜索用户转化为成单客户所需的曝光力。",
+    "item3Title": "性能分析与行为趋势洞察",
+    "item3Desc": "通过解读用户行为模式和漏斗表现，大幅提升营销效能。我们专注于对核心利润影响最大的关键指标，不断提炼您的数字化表现，确保每一次交互都能转化为更高的留存率和最大化的投资回报 (ROI)。"
+  },
+  "caseStudy": {
+    "badge": "案例结果展示",
+    "title": "真实客户，真实成果",
+    "legendBefore": "合作前",
+    "legendAfter": "合作后",
+    "case1Number": "01",
+    "case1Client": "健康品牌 · 墨尔本",
+    "case1Service": "Meta 广告",
+    "item6Desc": "定期输出花费、CPL、CPA、ROAS 和创意学习结果，并给出下一步优化方向。"
+  },
+  "caseStudy": {
+    "badge": "案例结果展示",
+    "title": "真实客户，真实成果",
+    "legendBefore": "合作前",
+    "legendAfter": "合作后",
+    "case1Number": "01",
+    "case1Client": "健康品牌 · 墨尔本",
+    "case1Service": "Meta 广告",
+    "case1Problem": "品牌有一定流量基础，但缺乏系统化的付费社媒结构。素材方向混乱，再营销层级薄弱，获客成本不断上升。",
+    "case1Metric1Label": "单条线索成本",
+    "case1Metric1Value": "−46%",
+    "case1Metric2Label": "高质量线索",
+    "case1Metric2Value": "3.1×",
+    "case1Metric3Label": "周期",
+    "case1Metric3Value": "4 个月",
+    "case1ChartLabel": "Meta 广告月度线索数",
+    "case2Number": "02",
+    "case2Client": "生活方式零售品牌 · 澳大利亚",
+    "case2Service": "再营销 + 线索收集",
+    "case2Problem": "销售主要依赖用户自行回访，没有有效的再营销层，也没有线索收集机制把平台流量沉淀为自有资产。",
+    "case2Metric1Label": "线索数（第 1 月）",
+    "case2Metric1Value": "64",
+    "case2Metric2Label": "线索数（第 6 月）",
+    "case2Metric2Value": "248",
+    "case2Metric3Label": "周期",
+    "case2Metric3Value": "6 个月",
+    "case2ChartLabel": "月度获客线索数"
+  }
+}

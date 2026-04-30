@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "serviceSocial": "Social Media",
+    "serviceAds": "Paid Ads",
+    "serviceCreative": "Creative",
+    "serviceEcommerce": "Ecommerce",
+    "serviceEmail": "Email Marketing",
+    "serviceVideoProduction": "Video Production",
+    "serviceWebsiteDevelopment": "Website Development",
+    "serviceProcess": "Service Process",
+    "successCases": "Success Cases",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "localeSwitch": {
+    "ariaLabel": "Switch language",
+    "en": "EN",
+    "zh-CN": "中文"
+  },
+  "actions": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  }
+}

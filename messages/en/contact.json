@@ -1,0 +1,142 @@
+{
+  "sectionTitle": "Get in Touch",
+  "sectionSubtitle": "Whether it is a new idea or a specific project, we are here to start the conversation.",
+  "formTitle": "Book a free strategy consultation.",
+  "formSubtitle": "Tell us what you are building and where you want to grow. We will review your details before the call.",
+  "successMessage": "Thank you! We'll be in touch soon.",
+  "submitErrorMessage": "Submission failed. Please try again, or contact us directly by email.",
+  "submitButton": "Submit and book consultation ->",
+  "submittingButton": "Submitting...",
+  "consultationForm": {
+    "label": "Start a project",
+    "title": "Book a free strategy consultation",
+    "titleLine1": "Book a free",
+    "titleLine2": "strategy consultation",
+    "subtitle": "Fill in the form below and we will contact you within one business day to arrange a 30-minute video call.",
+    "stepOneLabel": "Step 1 of 2",
+    "stepTwoLabel": "Step 2 of 2",
+    "nextButton": "Next",
+    "backButton": "Back",
+    "privacyNote": "We reply within one business day | No spam, ever",
+    "serviceOptions": [
+      "Social Media Management",
+      "Ecommerce (website + SEO + data)",
+      "Creative (brand + video)",
+      "Email Marketing",
+      "Website Design",
+      "Paid Ads (Meta + RedNote)",
+      "Full-service marketing"
+    ],
+    "budgetOptions": [
+      "$2,000 - $5,000 AUD/month",
+      "$5,000 - $10,000 AUD/month",
+      "$10,000 - $30,000 AUD/month",
+      "$30,000+ AUD/month",
+      "Not sure yet, need advice"
+    ],
+    "referralOptions": [
+      "Google Search",
+      "RedNote",
+      "Friend referral",
+      "Social media",
+      "Other"
+    ],
+    "fields": {
+      "name": {
+        "label": "Name *",
+        "placeholder": "Your name",
+        "errorRequired": "Please enter your name"
+      },
+      "email": {
+        "label": "Email *",
+        "placeholder": "your@email.com",
+        "errorRequired": "Please enter your email",
+        "errorInvalid": "Please enter a valid email address"
+      },
+      "phone": {
+        "label": "Phone *",
+        "placeholder": "+61 4xx xxx xxx",
+        "errorRequired": "Please enter your phone number"
+      },
+      "company": {
+        "label": "Company / brand name *",
+        "placeholder": "Your brand",
+        "errorRequired": "Please enter your company or brand name"
+      },
+      "website": {
+        "label": "Website",
+        "placeholder": "https://yourwebsite.com"
+      },
+      "service": {
+        "label": "Service you need *",
+        "placeholder": "Select your main service type",
+        "errorRequired": "Please select your main service type"
+      },
+      "budget": {
+        "label": "Monthly marketing budget",
+        "placeholder": "Select your budget range"
+      },
+      "challenge": {
+        "label": "What is your biggest marketing challenge? *",
+        "placeholder": "Tell us what you are struggling with right now and what you would like to improve...",
+        "errorRequired": "Please tell us about your main marketing challenge"
+      },
+      "referral": {
+        "label": "How did you hear about us?",
+        "placeholder": "Please select"
+      }
+    }
+  },
+  "page": {
+    "heroBadge": "Contact",
+    "heroTitle": "Tell us where",
+    "heroHighlight": "you want to grow next.",
+    "heroSubtitle": "Good Mood helps ambitious brands turn strategy, creative, and digital execution into measurable business growth. If you need a sharper plan or faster movement, this is the place to start the conversation.",
+    "companyTitle": "Company Snapshot",
+    "companyBody": "We are a Melbourne-based digital marketing team focused on practical growth systems. We combine positioning, creative direction, and performance thinking so every campaign has a clear commercial purpose.",
+    "servicesTitle": "Service Overview",
+    "servicesBody": "Our work spans social media marketing, paid ads, ecommerce growth, website design, email marketing, SEO, and creative production. We build the full customer journey instead of treating channels as isolated tasks.",
+    "approachTitle": "How We Work",
+    "approachBody": "Every engagement starts with understanding your goals, current bottlenecks, and revenue priorities. From there we shape an execution plan that is lean, measurable, and realistic for your team.",
+    "connectBadge": "Reach Out",
+    "connectTitle": "Contact details and project inquiry",
+    "connectSubtitle": "Use the form to tell us what you are building, what is blocked, and what outcome you want. If email is easier, you can also reach us directly using the details below.",
+    "details": {
+      "email": {
+        "label": "Email",
+        "value": "hello@goodmood.com.au"
+      },
+      "office": {
+        "label": "Office",
+        "value": "Tower 3, Level 9, 18-38 Siddeley St, Docklands VIC 3005"
+      },
+      "hours": {
+        "label": "Response window",
+        "value": "Monday to Friday, typically within one business day."
+      }
+    },
+    "faqBadge": "Q&A",
+    "faqTitle": "Common questions before we start",
+    "faqSubtitle": "A few practical answers to the questions businesses usually ask before booking a call.",
+    "faq": {
+      "items": {
+        "1": {
+          "question": "What types of businesses do you work with?",
+          "answer": "We usually work with growth-focused service brands, ecommerce businesses, and local companies that want clearer marketing systems and stronger online performance."
+        },
+        "2": {
+          "question": "Can we start with a small scope first?",
+          "answer": "Yes. Many projects begin with a focused audit, campaign sprint, or strategy session before expanding into ongoing execution."
+        },
+        "3": {
+          "question": "What should we prepare before contacting you?",
+          "answer": "A short summary of your business, current marketing channels, key challenges, and your target outcome is enough to begin. We can shape the rest together."
+        },
+        "4": {
+          "question": "Do you only work with Melbourne businesses?",
+          "answer": "No. Melbourne is our base, but we can work with brands across Australia and with teams that are comfortable collaborating remotely."
+        }
+      }
+    }
+  }
+}

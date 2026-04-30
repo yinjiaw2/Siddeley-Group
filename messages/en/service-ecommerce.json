@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "badge": "Ecommerce",
+    "titlePrefix": "Scale Attention Into",
+    "titleHighlight": "Ecommerce Results.",
+    "subtitle": "We build and optimize e-commerce environments that convert browsers into buyers through high-impact landing pages and strategic SEO (Search Engine Optimization). By integrating deep data analytics and user behavior insights, we refine your entire sales funnel to ensure seamless performance and scalable long-term growth.",
+    "cta": "Get Free Consultation",
+    "ctaSecondary": "View All Services"
+  },
+  "details": {
+    "badge": "Service Overview",
+    "title": "What We Do & Why It Matters",
+    "card1Title": "The Problem",
+    "card1Desc": "Many ecommerce stores attract traffic but lose buyers through weak landing pages, unclear product positioning, slow user journeys, and poor search visibility. Interest is there, but the shopping experience is not built to convert consistently.",
+    "card2Title": "What We Do",
+    "card2Desc": "We improve the full ecommerce journey across site structure, landing page design, product-page clarity, SEO, and performance analysis. The goal is to make it easier for the right customers to discover your store, trust what they see, and complete a purchase.",
+    "card3Title": "What You Get",
+    "card3Desc": "A stronger online storefront, clearer conversion paths, better organic visibility, and a more reliable sales funnel designed to support sustainable ecommerce growth."
+  },
+  "subFeatures": {
+    "badge": "What's Included",
+    "title": "Every Deliverable,",
+    "titleHighlight": "Explained.",
+    "count": "3",
+    "item1Title": "Strategic Web Structure & Growth",
+    "item1Desc": "Maximize your site’s potential by optimising landing pages and streamlining your conversion funnel. We analyse and refine your existing infrastructure to enhance performance and user engagement, creating a professional online presence that is built to scale and engineered for results.",
+    "item2Title": "Search Engine Optimization(SEO)",
+    "item2Desc": "Elevate your brand’s search ranking by blending technical SEO with value-driven content. We optimise every aspect of your site’s organic presence, from precise keyword targeting to comprehensive site audits, delivering the visibility needed to turn searchers into customers.",
+    "item3Title": "Performance Analytics & Behavioural Trends",
+    "item3Desc": "Elevate your marketing effectiveness by decoding user patterns and funnel performance. We focus on the metrics that matter most to your bottom line, refining your digital presence to ensure every interaction contributes to higher retention and maximum return on investment(ROI)."
+  },
+  "caseStudy": {
+    "badge": "Case Studies",
+    "title": "Real Results for Real Businesses",
+    "legendBefore": "Before Good Mood",
+    "legendAfter": "After Good Mood",
+    "case1Number": "01",
+    "case1Client": "Wellness Brand · Melbourne",
+    "case1Service": "Meta Ads",
+    "case1Problem": "The brand had traffic but no disciplined paid social structure. Creatives were inconsistent, retargeting was underdeveloped, and acquisition costs kept climbing.",
+    "case1Metric1Label": "Cost Per Lead",
+    "case1Metric1Value": "−46%",
+    "case1Metric2Label": "Qualified Leads",
+    "case1Metric2Value": "3.1×",
+    "case1Metric3Label": "Timeframe",
+    "case1Metric3Value": "4 Months",
+    "case1ChartLabel": "Monthly Leads from Meta Ads",
+    "case2Number": "02",
+    "case2Client": "Lifestyle Retailer · Australia",
+    "case2Service": "Retargeting + Lead Generation",
+    "case2Problem": "Sales relied on repeat visitors coming back on their own. There was no effective retargeting layer and no lead capture system to turn attention into owned demand.",
+    "case2Metric1Label": "Leads (Month 1)",
+    "case2Metric1Value": "64",
+    "case2Metric2Label": "Leads (Month 6)",
+    "case2Metric2Value": "248",
+    "case2Metric3Label": "Timeframe",
+    "case2Metric3Value": "6 Months",
+    "case2ChartLabel": "Monthly Leads Captured"
+  }
+}
