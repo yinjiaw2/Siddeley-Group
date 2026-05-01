@@ -105,7 +105,7 @@ export default function EcosystemSection() {
           </div>
           <div className="mt-6 inline-flex items-center text-[13px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[14px] font-app-body">
             <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
-            <span>{t("mainTagline")}</span>
+            <span className="ml-1">{t("mainTagline")}</span>
             <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
           </div>
 
