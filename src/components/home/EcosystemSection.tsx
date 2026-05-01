@@ -45,7 +45,6 @@ export default function EcosystemSection() {
     Icon: companyIcons[index - 1]!,
     accent: companyAccentClasses[index - 1]!,
     href: companyLinks[index - 1]!,
-    cardWidth: desktopCardWidths[index - 1]!,
   }));
 
   return (
@@ -97,31 +96,32 @@ export default function EcosystemSection() {
               </p>
             </div>
           </div>
+
           <div className="text-[14px] font-semibold uppercase tracking-[0.32em] text-[#D19B2F] md:text-[16px] font-app-body">
             {t("mainBadge")}
           </div>
-
-          <h3 className="mt-4 text-[48px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[72px] font-app-heading">
-            {t("mainTitle")}
-          </h3>
           <div className="mt-6 inline-flex items-center text-[13px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[14px] font-app-body">
             <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
             <span>{t("mainTagline")}</span>
             <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
           </div>
+
+          <h3 className="mt-4 text-[48px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[72px] font-app-heading">
+            {t("mainTitle")}
+          </h3>
         </div>
 
-        <div className="relative z-10 mt-10 flex flex-col">
-          <div className="flex flex-row items-start justify-center gap-6">
+        <div className="mt-20 flex flex-col items-center">
+          <div className="flex flex-row justify-between w-240">
             {companies.slice(0, 2).map((company) => (
-              <div key={company.title} className={company.cardWidth}>
+              <div key={company.title} className="w-72">
                 <CompanyCard company={company} />
               </div>
             ))}
           </div>
-          <div className="flex flex-row items-start justify-center gap-6">
+          <div className="flex flex-row justify-between w-160 mt-10">
             {companies.slice(2, 4).map((company) => (
-              <div key={company.title} className={company.cardWidth}>
+              <div key={company.title} className="w-72">
                 <CompanyCard company={company} />
               </div>
             ))}
