@@ -4,6 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Boxes, HandHeart, Leaf, Lightbulb } from "lucide-react";
 import { useTranslations } from "next-intl";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 const companyIcons = [Boxes, Leaf, Lightbulb, HandHeart];
 const companyAccentClasses = [
@@ -31,8 +36,6 @@ const companyLinks = [
   "https://www.insightidea.com.au/en/success",
   "https://goodmood-self.vercel.app/",
 ];
-
-const desktopCardWidths = ["w-[262px]", "w-[286px]", "w-[278px]", "w-[250px]"];
 
 export default function EcosystemSection() {
   const t = useTranslations("home.ecosystem");
@@ -159,38 +162,49 @@ function CompanyCard({
   const { title, tagline, body, cta, Icon, accent, href } = company;
 
   return (
-    <div className="group relative h-full">
-      <Link
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className="flex h-full min-h-[112px] items-center justify-between gap-2 rounded-[26px] border border-white/65 bg-white/54 px-3 py-3 shadow-[0_22px_60px_rgba(102,132,186,0.16)] backdrop-blur-[18px] transition-all duration-300 hover:-translate-y-1 hover:bg-white/64 md:min-h-[88px] md:gap-3 md:px-5 md:py-4"
-      >
-        <div className="flex min-w-0 flex-1 items-center gap-2 md:gap-3">
-          <div
-            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${accent.chip} md:h-12 md:w-12`}
-          >
-            <Icon size={18} strokeWidth={2.1} className="md:hidden" />
-            <Icon size={22} strokeWidth={2.1} className="hidden md:block" />
-          </div>
-
-          <div className="min-w-0 flex-1 text-left">
-            <h4 className="break-words text-[15px] font-extrabold leading-[1.15] tracking-[-0.03em] text-[#163E7A] font-app-heading md:text-[18px] md:leading-[1.2]">
-              {title}
-            </h4>
-          </div>
-        </div>
-
-        <div
-          className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5 ${accent.arrow} md:h-8 md:w-8`}
-          aria-label={cta}
+    <HoverCard openDelay={80} closeDelay={120}>
+      <HoverCardTrigger asChild>
+        <Link
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          className="group flex h-full min-h-[112px] items-center justify-between gap-2 rounded-[26px] border border-white/65 bg-white/54 px-3 py-3 shadow-[0_22px_60px_rgba(102,132,186,0.16)] backdrop-blur-[18px] transition-all duration-300 hover:-translate-y-1 hover:bg-white/64 md:min-h-[88px] md:gap-3 md:px-5 md:py-4"
         >
-          <ArrowRight size={12} strokeWidth={2.2} className="md:hidden" />
-          <ArrowRight size={14} strokeWidth={2.2} className="hidden md:block" />
-        </div>
-      </Link>
+          <div className="flex min-w-0 flex-1 items-center gap-2 md:gap-3">
+            <div
+              className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${accent.chip} md:h-12 md:w-12`}
+            >
+              <Icon size={18} strokeWidth={2.1} className="md:hidden" />
+              <Icon size={22} strokeWidth={2.1} className="hidden md:block" />
+            </div>
 
-      <div className="pointer-events-none absolute left-1/2 top-[calc(100%-8px)] z-50 w-[300px] -translate-x-1/2 rounded-[24px] border border-white/80 bg-white/78 p-5 opacity-0 shadow-[0_22px_54px_rgba(94,128,184,0.18)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-3 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-3 group-focus-within:opacity-100">
+            <div className="min-w-0 flex-1 text-left">
+              <h4 className="break-words text-[15px] font-extrabold leading-[1.15] tracking-[-0.03em] text-[#163E7A] font-app-heading md:text-[18px] md:leading-[1.2]">
+                {title}
+              </h4>
+            </div>
+          </div>
+
+          <div
+            className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5 ${accent.arrow} md:h-8 md:w-8`}
+            aria-label={cta}
+          >
+            <ArrowRight size={12} strokeWidth={2.2} className="md:hidden" />
+            <ArrowRight
+              size={14}
+              strokeWidth={2.2}
+              className="hidden md:block"
+            />
+          </div>
+        </Link>
+      </HoverCardTrigger>
+
+      <HoverCardContent
+        side="bottom"
+        align="center"
+        sideOffset={12}
+        className="hidden w-[300px] rounded-[24px] border border-white/80 bg-white/78 p-5 shadow-[0_22px_54px_rgba(94,128,184,0.18)] backdrop-blur-[18px] md:block"
+      >
         <h5 className="text-[18px] font-extrabold tracking-[-0.02em] text-[#163E7A] font-app-heading">
           {title}
         </h5>
@@ -203,7 +217,7 @@ function CompanyCard({
         <span className="mt-4 inline-flex rounded-full border border-[#CFE0FF] bg-[#EEF4FF] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#4D77D8] font-app-body">
           {cta}
         </span>
-      </div>
-    </div>
+      </HoverCardContent>
+    </HoverCard>
   );
 }
