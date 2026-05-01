@@ -27,7 +27,7 @@ export default function Footer() {
               <span
                 className="text-[34px] font-extrabold tracking-[-0.03em] text-white font-app-heading"
               >
-                Siddeley Group
+                {t("brandName")}
               </span>
             </Link>
             <p className="text-sm leading-7 text-white/40 whitespace-pre-line">{t("tagline")}</p>

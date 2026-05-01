@@ -133,3 +133,17 @@ h6 {
 .animate-marquee-right:hover {
   animation-play-state: paused;
 }
+
+@keyframes scroll-nudge {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+}
+
+.animate-scroll-nudge {
+  animation: scroll-nudge 1.8s ease-in-out infinite;
+}

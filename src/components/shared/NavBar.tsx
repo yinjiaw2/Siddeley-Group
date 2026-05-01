@@ -94,7 +94,7 @@ export default function NavBar() {
                   isTransparent ? "text-white" : "text-slate-900"
                 } font-app-heading`}
               >
-                Siddeley Group
+                {t("brandName")}
               </span>
             </Link>
 
