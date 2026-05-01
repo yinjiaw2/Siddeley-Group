@@ -34,7 +34,7 @@ export default function NavBar() {
       : "text-slate-700 hover:bg-slate-900/6 hover:text-slate-950";
   const navLinks = [
     { label: t("nav.home"), href: "/#hero" },
-    { label: t("nav.services"), href: "/services" },
+    { label: t("nav.approach"), href: "/approach" },
     { label: t("nav.serviceProcess"), href: "/about" },
     { label: t("nav.contact"), href: "/contact" },
   ];
@@ -79,16 +79,12 @@ export default function NavBar() {
     <>
       <header
         className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
-          isTransparent
-            ? "top-4"
-            : "top-0"
+          isTransparent ? "top-4" : "top-0"
         }`}
       >
         <div
           className={`mx-auto transition-all duration-300 ${
-            isTransparent
-              ? "max-w-[calc(100%-2rem)] px-4"
-              : "max-w-none px-0"
+            isTransparent ? "max-w-[calc(100%-2rem)] px-4" : "max-w-none px-0"
           }`}
         >
           <div
