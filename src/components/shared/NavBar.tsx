@@ -38,6 +38,7 @@ export default function NavBar() {
   const navLinks = [
     { label: t("nav.home"), href: "/#hero" },
     { label: t("nav.approach"), href: "/approach" },
+    { label: t("nav.about"), href: "/about" },
   ];
 
   useEffect(() => {
