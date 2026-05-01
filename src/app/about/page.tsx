@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
+import GroupHistoryVisionSection from "@/components/about/GroupHistoryVisionSection";
 
 export const metadata: Metadata = {
-  title: "about page",
-  description: "about page of siddeley group",
+  title: "About Us",
+  description: "The history and vision of Siddeley Group.",
 };
 
 export default function AboutPage() {
-  return <></>;
+  return (
+    <>
+      <GroupHistoryVisionSection />
+    </>
+  );
 }
