@@ -13,5 +13,33 @@
     "visionLabel": "Our Vision",
     "visionTitle": "Built for the long term",
     "visionBody": "We are building Siddeley to be the partner brands turn to when they are serious about growth — not a vendor relationship, but a structural one. Our vision is a group that compounds expertise across disciplines, where every engagement makes the next one sharper. We measure success not by campaign metrics alone, but by the sustained momentum we create for the businesses we work with."
+  },
+  "leadership": {
+    "badge": "Our People",
+    "titleBefore": "The team behind",
+    "titleAccent": " Siddeley",
+    "titleAfter": "",
+    "subtitle": "A cross-disciplinary group united by rigour, creativity, and a long-term commitment to the brands they serve.",
+    "filterAll": "All",
+    "filterBoard": "Board of Directors",
+    "filterExecutive": "Executive Management",
+    "filterSpecialists": "Specialists",
+    "filterEmerging": "Emerging Talent",
+    "linkedinLabel": "LinkedIn",
+    "roles": {
+      "chairman": "Chairman & Non-Executive Director",
+      "nonExecDirector": "Non-Executive Director",
+      "ceo": "Chief Executive Officer",
+      "coo": "Chief Operating Officer",
+      "cfo": "Chief Financial Officer",
+      "cmo": "Chief Marketing Officer",
+      "headBrandStrategy": "Head of Brand Strategy",
+      "headDigitalMarketing": "Head of Digital Marketing",
+      "headCreative": "Head of Creative",
+      "headBizDev": "Head of Business Development",
+      "brandStrategist": "Brand Strategist",
+      "digitalManager": "Digital Marketing Manager",
+      "creativeLead": "Creative Lead"
+    }
   }
 }

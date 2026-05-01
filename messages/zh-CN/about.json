@@ -13,5 +13,33 @@
     "visionLabel": "我们的愿景",
     "visionTitle": "为长期价值而生",
     "visionBody": "我们正在将 Siddeley 打造成品牌在认真追求增长时所倚重的战略伙伴——不止于供应商关系，而是深度嵌入品牌发展的结构性存在。我们的愿景，是建立一个能够在多个专业领域持续积累复利的集团，让每一次合作都使下一次更加精准有力。我们衡量成功的标准，不是单次活动的数据表现，而是我们为合作品牌创造的持续增长动能。"
+  },
+  "leadership": {
+    "badge": "团队成员",
+    "titleBefore": "Siddeley",
+    "titleAccent": "背后的团队",
+    "titleAfter": "",
+    "subtitle": "跨学科背景，以严谨、创意与长期承诺为共同纽带，专注服务于每一个合作品牌。",
+    "filterAll": "全部",
+    "filterBoard": "董事会",
+    "filterExecutive": "执行管理层",
+    "filterSpecialists": "专业团队",
+    "filterEmerging": "新兴人才",
+    "linkedinLabel": "LinkedIn",
+    "roles": {
+      "chairman": "主席兼非执行董事",
+      "nonExecDirector": "非执行董事",
+      "ceo": "首席执行官",
+      "coo": "首席运营官",
+      "cfo": "首席财务官",
+      "cmo": "首席营销官",
+      "headBrandStrategy": "品牌战略总监",
+      "headDigitalMarketing": "数字营销总监",
+      "headCreative": "创意总监",
+      "headBizDev": "业务发展总监",
+      "brandStrategist": "品牌策划师",
+      "digitalManager": "数字营销经理",
+      "creativeLead": "创意负责人"
+    }
   }
 }
