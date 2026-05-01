@@ -5,10 +5,13 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { GoodMoodLogoAnimation } from "./GoodMoodAnimation";
 
 const fontStyle = {
   fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const brandHeadingStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 export default function NavBar() {
@@ -93,10 +96,14 @@ export default function NavBar() {
             }`}
           >
             <Link href="/#hero" className="flex items-center gap-2 shrink-0">
-              <GoodMoodLogoAnimation
-                className={isTransparent ? "text-white" : "text-slate-900"}
-                accentClassName="text-[#F9C110]"
-              />
+              <span
+                className={`text-[28px] font-extrabold tracking-[-0.03em] ${
+                  isTransparent ? "text-white" : "text-slate-900"
+                }`}
+                style={brandHeadingStyle}
+              >
+                Siddeley Group
+              </span>
             </Link>
 
             <nav className="hidden md:flex items-center gap-1">

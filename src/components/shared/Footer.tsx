@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { MapPin } from "lucide-react";
-import { GoodMoodLogoAnimation } from "./GoodMoodAnimation";
 
 const font = "var(--font-app-body), Arial, Helvetica, sans-serif";
+const brandHeadingStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
+};
 const googleMapsHref =
   "https://www.google.com/maps/search/?api=1&query=Level%209%20Tower%203%2F18-38%20Siddeley%20St";
 
@@ -23,7 +25,12 @@ export default function Footer() {
           {/* ── 品牌 ── */}
           <div className="flex flex-col gap-4">
             <Link href="/#hero" className="inline-flex items-center">
-              <GoodMoodLogoAnimation />
+              <span
+                className="text-[34px] font-extrabold tracking-[-0.03em] text-white"
+                style={brandHeadingStyle}
+              >
+                Siddeley Group
+              </span>
             </Link>
             <p className="text-sm leading-7 text-white/40 whitespace-pre-line">{t("tagline")}</p>
           </div>
