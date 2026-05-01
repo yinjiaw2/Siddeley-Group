@@ -1,15 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "services": "ESG",
-    "serviceSocial": "Social Media",
-    "serviceAds": "Paid Ads",
-    "serviceCreative": "Creative",
-    "serviceEcommerce": "Ecommerce",
-    "serviceEmail": "Email Marketing",
-    "serviceVideoProduction": "Video Production",
-    "serviceWebsiteDevelopment": "Website Development",
-    "serviceProcess": "Partnership",
+    "approach": "Approach",
     "successCases": "Success Cases",
     "about": "About Us",
     "contact": "News"
