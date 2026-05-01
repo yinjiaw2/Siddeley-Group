@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-const fontStyle = { fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif" };
+const fontStyle = { fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif" };
 
 const DATA = [
   { month: "Mar", value: 1100 },

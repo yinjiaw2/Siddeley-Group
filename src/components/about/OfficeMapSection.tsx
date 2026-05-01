@@ -5,7 +5,11 @@ import Image from "next/image";
 import { useMessages, useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 // SVG viewBox "507 90 678 339" is 2:1 — container also 2:1 → perfect fill, no crop.
@@ -68,7 +72,7 @@ export default function OfficeMapSection() {
           </div>
           <h2
             className="text-[32px] font-extrabold leading-tight tracking-[-0.03em] text-white md:text-[42px]"
-            style={fontStyle}
+            style={headingFontStyle}
           >
             {t("title")}
             <span style={{ color: "#F5C400" }}>{t("titleAccent")}</span>

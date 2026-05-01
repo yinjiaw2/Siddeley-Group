@@ -3,7 +3,11 @@
 import { useLocale, useMessages, useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 export default function CompanyIntroSection() {
@@ -13,7 +17,7 @@ export default function CompanyIntroSection() {
   const accentFont =
     locale === "en"
       ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-ma-shan-zheng)";
+      : "var(--font-noto-serif-sc), Georgia, serif";
   const rawDescription = messages.about?.companyIntro?.description;
   const descriptionParagraphs = Array.isArray(rawDescription)
     ? rawDescription
@@ -30,7 +34,7 @@ export default function CompanyIntroSection() {
             </div>
             <h2
               className="text-[34px] font-extrabold leading-[1.1] tracking-[-0.03em] text-[#1A1A1A] md:text-[46px] lg:text-[52px]"
-              style={fontStyle}
+              style={headingFontStyle}
             >
               {t("titleBefore")}
               <span style={{ color: "#F5C400", fontFamily: accentFont }}>

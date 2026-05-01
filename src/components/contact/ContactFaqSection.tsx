@@ -2,7 +2,11 @@ import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 const faqKeys = ["1", "2", "3", "4"] as const;
@@ -27,7 +31,7 @@ export default function ContactFaqSection() {
           </span>
           <h2
             className="mt-6 text-4xl font-extrabold leading-tight text-[#1A1A1A] md:text-5xl"
-            style={{ ...fontStyle, letterSpacing: "-0.03em" }}
+            style={{ ...headingFontStyle, letterSpacing: "-0.03em" }}
           >
             {t("page.faqTitle")}
           </h2>
@@ -54,7 +58,7 @@ export default function ContactFaqSection() {
                 <div>
                   <h3
                     className="text-lg font-bold text-[#1A1A1A]"
-                    style={fontStyle}
+                    style={headingFontStyle}
                   >
                     {t(`page.faq.items.${faqKey}.question`)}
                   </h3>

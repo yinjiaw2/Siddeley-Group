@@ -19,6 +19,37 @@
     "stat4Value": "24/7 ",
     "stat4Label": "Strategic Support "
   },
+  "groupIntro": {
+    "badge": "Group Overview",
+    "titleBefore": "Built on",
+    "titleAccent": " strategy, creativity",
+    "titleAfter": " and long-term growth",
+    "paragraphs": [
+      "Siddeley Group brings together brand strategy, digital marketing, and business transformation under one integrated structure, helping ambitious companies move with more clarity and momentum.",
+      "From market positioning and creative direction to campaign execution and digital growth systems, we work across the full journey to turn ideas into measurable commercial outcomes.",
+      "Our team combines local market understanding with a global perspective, building partnerships that are practical, disciplined, and designed to scale with every stage of a brand's evolution."
+    ],
+    "imageAlt": "Siddeley Group overview"
+  },
+  "ecosystem": {
+    "badge": "Ecosystem",
+    "titleBefore": "A lighthouse-led",
+    "titleAccent": " group ecosystem",
+    "titleAfter": "",
+    "subtitle": "Anchored by the parent company, our four businesses move in the same direction while each one deepens its own expertise, creating a connected and scalable ecosystem.",
+    "backgroundAlt": "Lighthouse ecosystem background",
+    "mainBadge": "Parent Company",
+    "mainTitle": "Siddeley Group",
+    "mainSubtitle": "The lighthouse brand that sets direction, aligns resources, and leads the shared future of the wider group.",
+    "company1Name": "Company One",
+    "company1Subtitle": "Builds foundational systems and operational frameworks for sustainable expansion.",
+    "company2Name": "Company Two",
+    "company2Subtitle": "Drives green innovation and long-term development with practical execution.",
+    "company3Name": "Company Three",
+    "company3Subtitle": "Turns technology capability into forward-looking commercial momentum.",
+    "company4Name": "Company Four",
+    "company4Subtitle": "Creates people-first impact and social value through connected partnerships."
+  },
   "services": {
     "badge": "Our Service",
     "title": "Our",

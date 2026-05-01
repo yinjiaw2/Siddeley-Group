@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { MapPin } from "lucide-react";
 import { GoodMoodLogoAnimation } from "./GoodMoodAnimation";
 
-const font = "var(--font-app-sans), Arial, Helvetica, sans-serif";
+const font = "var(--font-app-body), Arial, Helvetica, sans-serif";
 const googleMapsHref =
   "https://www.google.com/maps/search/?api=1&query=Level%209%20Tower%203%2F18-38%20Siddeley%20St";
 

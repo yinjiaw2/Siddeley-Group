@@ -2,19 +2,17 @@
 
 import { useTranslations } from "next-intl";
 
-const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 export default function HeroSection() {
   const t = useTranslations("home");
-  const heroTitle = [
+  const heroTitleLines = [
     t("hero.titlePrefix"),
     t("hero.titleHighlight"),
     t("hero.titleSuffix"),
-  ]
-    .filter(Boolean)
-    .join(" ");
+  ].filter(Boolean);
 
   return (
     <section
@@ -40,9 +38,17 @@ export default function HeroSection() {
         <div className="max-w-5xl">
           <h1
             className="text-5xl font-extrabold leading-tight text-white md:text-6xl lg:text-7xl"
-            style={{ ...fontStyle, letterSpacing: "-0.02em" }}
+            style={{ ...headingFontStyle, letterSpacing: "-0.02em" }}
           >
-            {heroTitle}
+            {heroTitleLines.map((line, index) => (
+              <span
+                key={`${index}-${line}`}
+                className="hero-title-line hero-title-float-in block"
+                style={{ ["--hero-enter-delay" as string]: `${index * 180}ms` }}
+              >
+                {line}
+              </span>
+            ))}
           </h1>
         </div>
       </div>

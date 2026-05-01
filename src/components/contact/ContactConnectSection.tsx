@@ -5,7 +5,11 @@ import { useTranslations } from "next-intl";
 import ConsultationForm from "@/components/shared/ConsultationForm";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 const detailCards = [
@@ -35,7 +39,7 @@ export default function ContactConnectSection() {
 
           <h2
             className="mt-6 text-4xl font-extrabold leading-tight md:text-5xl"
-            style={{ ...fontStyle, letterSpacing: "-0.03em" }}
+            style={{ ...headingFontStyle, letterSpacing: "-0.03em" }}
           >
             {t("page.connectTitle")}
           </h2>

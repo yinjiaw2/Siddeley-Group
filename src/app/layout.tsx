@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import {
-  Geist,
   Geist_Mono,
-  Ma_Shan_Zheng,
-  Outfit,
+  Inter,
+  Noto_Sans_SC,
+  Noto_Serif_SC,
   Playfair_Display,
 } from "next/font/google";
 import "./globals.css";
@@ -12,8 +12,8 @@ import Footer from "@/components/shared/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -22,9 +22,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
+const notoSansSc = Noto_Sans_SC({
+  variable: "--font-noto-sans-sc",
+  preload: false,
 });
 
 const playfairDisplay = Playfair_Display({
@@ -32,9 +32,8 @@ const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
 });
 
-const maShanZheng = Ma_Shan_Zheng({
-  variable: "--font-ma-shan-zheng",
-  weight: "400",
+const notoSerifSc = Noto_Serif_SC({
+  variable: "--font-noto-serif-sc",
   preload: false,
 });
 
@@ -53,7 +52,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${playfairDisplay.variable} ${maShanZheng.variable} h-full antialiased`}
+      className={`${inter.variable} ${geistMono.variable} ${notoSansSc.variable} ${playfairDisplay.variable} ${notoSerifSc.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider>

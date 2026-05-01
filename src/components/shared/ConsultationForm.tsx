@@ -9,7 +9,11 @@ import ConsultationFormStepTwo from "./ConsultationFormStepTwo";
 import type { ContactFormValues } from "./consultationForm.types";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 const GOOGLE_SCRIPT_ENDPOINT = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_ENDPOINT;
@@ -137,7 +141,7 @@ export default function ConsultationForm() {
       <div className="mb-8 items-center justify-center">
         <h2
           className="text-3xl font-extrabold text-[#1A1A1A]"
-          style={fontStyle}
+          style={headingFontStyle}
         >
           {t("consultationForm.title")}
         </h2>

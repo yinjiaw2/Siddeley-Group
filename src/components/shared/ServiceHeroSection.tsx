@@ -6,7 +6,11 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 interface Props {
@@ -38,7 +42,7 @@ export default function ServiceHeroSection({
 
             <h1
               className="max-w-[760px] text-[44px] font-extrabold leading-[0.96] text-[#F5C400] md:text-[64px] lg:text-[76px]"
-              style={{ ...fontStyle, letterSpacing: "-0.03em" }}
+              style={{ ...headingFontStyle, letterSpacing: "-0.03em" }}
             >
               <span className="block text-[#1A1A1A]">{t("titlePrefix")}</span>
               <span className="block">{t("titleHighlight")}</span>

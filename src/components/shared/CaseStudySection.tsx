@@ -5,7 +5,11 @@ import BarChart from "@/components/charts/BarChart";
 import LineChart from "@/components/charts/LineChart";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 // ─── Internal card components ─────────────────────────────────────────────────
@@ -156,7 +160,7 @@ export default function CaseStudySection({ namespace, chart1, chart2 }: Props) {
           </div>
           <h2
             className="text-[32px] font-extrabold leading-tight tracking-[-0.03em] text-[#1A1A1A] md:text-[42px]"
-            style={fontStyle}
+            style={headingFontStyle}
           >
             {t("caseStudy.title")}
           </h2>

@@ -19,6 +19,37 @@
     "stat4Value": "24/7",
     "stat4Label": "战略支持"
   },
+  "groupIntro": {
+    "badge": "集团简介",
+    "titleBefore": "以",
+    "titleAccent": "战略、创意与增长",
+    "titleAfter": "为核心",
+    "paragraphs": [
+      "Siddeley Group 聚合品牌战略、数字营销与商业转型能力，以一体化的服务结构，帮助有增长野心的企业更清晰、更高效地前进。",
+      "从市场定位、创意方向到营销执行与数字增长系统搭建，我们贯穿品牌发展的全链路，将想法转化为可衡量的商业成果。",
+      "我们的团队兼具本土市场洞察与国际化视野，以务实、严谨且可持续扩展的合作方式，陪伴品牌在不同阶段稳步进化。"
+    ],
+    "imageAlt": "Siddeley 集团简介图片"
+  },
+  "ecosystem": {
+    "badge": "生态体系",
+    "titleBefore": "以灯塔为核心的",
+    "titleAccent": "集团生态",
+    "titleAfter": "",
+    "subtitle": "由母公司统一指引方向，四家子公司各自深耕专业能力，在协同中形成清晰、稳定且可持续扩展的集团生态体系。",
+    "backgroundAlt": "灯塔生态背景图",
+    "mainBadge": "集团母公司",
+    "mainTitle": "Siddeley Group",
+    "mainSubtitle": "作为灯塔品牌，负责统筹方向、整合资源，并引领整个集团走向共同的未来。",
+    "company1Name": "子公司一",
+    "company1Subtitle": "专注基础体系建设与运营支撑，为长期扩展打下稳定底座。",
+    "company2Name": "子公司二",
+    "company2Subtitle": "聚焦绿色创新与可持续发展，把长期价值真正落到执行层面。",
+    "company3Name": "子公司三",
+    "company3Subtitle": "以科技驱动业务演进，把专业能力转化为面向未来的增长动能。",
+    "company4Name": "子公司四",
+    "company4Subtitle": "以人为本，连接合作伙伴与社会价值，塑造更广泛的正向影响。"
+  },
   "services": {
     "badge": "我们的服务",
     "title": "专业",

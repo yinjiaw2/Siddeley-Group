@@ -4,7 +4,11 @@ import { Target, Lightbulb, Globe2, TrendingUp, Users } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 const icons = [Target, Lightbulb, Globe2, TrendingUp, Users];
@@ -79,7 +83,7 @@ export default function CoreCapabilitiesSection({
   const accentFont =
     locale === "en"
       ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-ma-shan-zheng)";
+      : "var(--font-noto-serif-sc), Georgia, serif";
 
   const items = [1, 2, 3, 4, 5].map((n, i) => ({
     Icon: icons[i]!,
@@ -110,7 +114,7 @@ export default function CoreCapabilitiesSection({
                   ? "text-[38px] leading-none text-[#1A1A1A] md:text-[52px]"
                   : "text-[32px] leading-tight text-[#1A1A1A] md:text-[46px]"
               }`}
-              style={fontStyle}
+              style={headingFontStyle}
             >
               {variant === "whyUs" ? (
                 <>
@@ -191,7 +195,7 @@ export default function CoreCapabilitiesSection({
                     </div>
                     <h3
                       className="text-xl font-bold text-[#1A1A1A]"
-                      style={fontStyle}
+                      style={headingFontStyle}
                     >
                       {title}
                     </h3>
@@ -225,7 +229,7 @@ export default function CoreCapabilitiesSection({
                 </div>
                 <h3
                   className="text-[17px] font-bold text-[#1A1A1A]"
-                  style={fontStyle}
+                  style={headingFontStyle}
                 >
                   {title}
                 </h3>

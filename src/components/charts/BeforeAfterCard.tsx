@@ -1,6 +1,6 @@
 "use client";
 
-const fontStyle = { fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif" };
+const fontStyle = { fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif" };
 
 export interface CompareRow {
   label: string;

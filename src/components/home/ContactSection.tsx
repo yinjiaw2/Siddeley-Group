@@ -4,7 +4,11 @@ import { useTranslations } from "next-intl";
 import ConsultationForm from "@/components/shared/ConsultationForm";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 export default function ContactSection() {
@@ -32,7 +36,7 @@ export default function ContactSection() {
           <div className="space-y-4">
             <h2
               className="text-4xl font-extrabold leading-tight md:text-5xl"
-              style={{ ...fontStyle, letterSpacing: "-0.03em" }}
+              style={{ ...headingFontStyle, letterSpacing: "-0.03em" }}
             >
               {t("formTitle")}
             </h2>

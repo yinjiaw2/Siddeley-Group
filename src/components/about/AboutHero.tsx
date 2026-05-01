@@ -8,7 +8,7 @@ export default function AboutHero() {
   const isEnglish = locale === "en";
   const accentFont = isEnglish
     ? "var(--font-playfair-display), Georgia, serif"
-    : "var(--font-ma-shan-zheng)";
+    : "var(--font-noto-serif-sc), Georgia, serif";
 
   return (
     <section
@@ -27,7 +27,7 @@ export default function AboutHero() {
               className="text-sm font-semibold tracking-widest uppercase text-white/90"
               style={{
                 fontFamily:
-                  "var(--font-app-sans), Arial, Helvetica, sans-serif",
+                  "var(--font-app-body), Arial, Helvetica, sans-serif",
               }}
             >
               {t("tag")}
@@ -37,7 +37,7 @@ export default function AboutHero() {
           <h1
             className="text-[44px] font-extrabold leading-[1.04] text-white md:text-[64px] lg:text-[78px]"
             style={{
-              fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+              fontFamily: "var(--font-app-heading), Georgia, serif",
               letterSpacing: "-0.03em",
             }}
           >
@@ -63,7 +63,7 @@ export default function AboutHero() {
           <span
             className="text-xs font-semibold uppercase tracking-widest text-white"
             style={{
-              fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+              fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
             }}
           >
             Scroll

@@ -4,7 +4,11 @@ import { Activity, Gem, LineChart, ShieldCheck, Sparkles } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 const icons = [Activity, Gem, LineChart, ShieldCheck, Sparkles];
@@ -15,7 +19,7 @@ export default function CoreValuesSection() {
   const accentFont =
     locale === "en"
       ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-ma-shan-zheng)";
+      : "var(--font-noto-serif-sc), Georgia, serif";
 
   const items = [1, 2, 3, 4, 5].map((n, i) => ({
     Icon: icons[i]!,
@@ -34,7 +38,7 @@ export default function CoreValuesSection() {
             </div>
             <h2
               className="max-w-[620px] text-[34px] font-extrabold leading-[1.02] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px]"
-              style={fontStyle}
+              style={headingFontStyle}
             >
               {t("titleBefore")}
               <span style={{ color: "#F5C400", fontFamily: accentFont }}>
@@ -87,7 +91,7 @@ export default function CoreValuesSection() {
                   </div>
                   <h3
                     className="text-2xl font-bold leading-none tracking-[-0.02em] md:text-[24px]"
-                    style={fontStyle}
+                    style={headingFontStyle}
                   >
                     {title}
                   </h3>

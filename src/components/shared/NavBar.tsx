@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { GoodMoodLogoAnimation } from "./GoodMoodAnimation";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
 };
 
 export default function NavBar() {

@@ -5,7 +5,11 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 export default function HeroSection() {
@@ -37,7 +41,7 @@ export default function HeroSection() {
           {/* Headline */}
           <h1
             className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white"
-            style={{ ...fontStyle, letterSpacing: "-0.02em" }}
+            style={{ ...headingFontStyle, letterSpacing: "-0.02em" }}
           >
             {t("titlePrefix")}{t("titlePrefix") ? " " : ""}
             <span style={{ color: "#F5C400" }}>{t("titleHighlight")}</span>

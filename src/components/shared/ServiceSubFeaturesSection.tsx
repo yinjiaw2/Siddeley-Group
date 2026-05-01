@@ -5,7 +5,11 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 interface Props {
@@ -37,7 +41,7 @@ export default function ServiceSubFeaturesSection({
             </div>
             <h2
               className="max-w-[760px] text-[38px] font-extrabold leading-[1.02] tracking-[-0.03em] text-[#1A1A1A] md:text-[54px]"
-              style={fontStyle}
+              style={headingFontStyle}
             >
               <span className="block mb-4 text-sm font-medium uppercase tracking-[0.18em] text-[#A39890]">
                 {t("details.card2Title")}
@@ -84,7 +88,7 @@ export default function ServiceSubFeaturesSection({
               <div className="flex items-start justify-between gap-4">
                 <h3
                   className="text-[21px] font-bold leading-snug text-[#1A1A1A]"
-                  style={fontStyle}
+                  style={headingFontStyle}
                 >
                   {title}
                 </h3>

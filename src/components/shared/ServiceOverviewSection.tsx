@@ -3,7 +3,11 @@
 import { useTranslations } from "next-intl";
 
 const fontStyle = {
-  fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif",
+  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
+};
+
+const headingFontStyle = {
+  fontFamily: "var(--font-app-heading), Georgia, serif",
 };
 
 interface Props {
@@ -37,7 +41,7 @@ export default function ServiceOverviewSection({ namespace }: Props) {
         </div>
         <h2
           className="mb-10 max-w-[780px] text-[32px] font-extrabold leading-tight tracking-[-0.03em] text-[#1A1A1A] md:text-[44px]"
-          style={fontStyle}
+          style={headingFontStyle}
         >
           {t("details.title")}
         </h2>
@@ -75,7 +79,7 @@ export default function ServiceOverviewSection({ namespace }: Props) {
                     <div className="space-y-4">
                       <h3
                         className="max-w-[320px] text-[26px] font-bold leading-[1.02] tracking-[-0.02em]"
-                        style={fontStyle}
+                        style={headingFontStyle}
                       >
                         {title}
                       </h3>
@@ -118,7 +122,7 @@ export default function ServiceOverviewSection({ namespace }: Props) {
                 </span>
                 <h3
                   className="max-w-[220px] text-[21px] font-bold leading-[1.08] xl:text-[19px]"
-                  style={fontStyle}
+                  style={headingFontStyle}
                 >
                   {title}
                 </h3>

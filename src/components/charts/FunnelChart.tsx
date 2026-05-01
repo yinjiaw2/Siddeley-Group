@@ -1,6 +1,6 @@
 "use client";
 
-const fontStyle = { fontFamily: "var(--font-app-sans), Arial, Helvetica, sans-serif" };
+const fontStyle = { fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif" };
 
 const STAGES = [
   { label: "Impressions",  value: "280,000", pct: null,   topW: 300, botW: 248 },
