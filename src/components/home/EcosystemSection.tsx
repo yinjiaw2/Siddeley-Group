@@ -51,10 +51,10 @@ export default function EcosystemSection() {
   return (
     <section
       id="ecosystem"
-      className="bg-[#F7FAFF] py-24 items-center justify-center"
+      className="bg-[#F7FAFF] py-10 items-center justify-center"
     >
-      <div className="flex w-full px-6 text-center">
-        <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-[#DCE7FA] bg-white px-5 py-2 text-sm uppercase text-[#6B7A99] font-app-body">
+      <div className="flex flex-col w-full px-6 items-center justify-center text-center my-6">
+        <div className="mb-5 inline-flex items-center rounded-full border border-[#DCE7FA] bg-white px-5 text-sm uppercase text-[#6B7A99] font-app-body">
           <span className="inline-block h-px w-7 shrink-0 bg-[#7AA9E8]" />
           {t("badge")}
         </div>
@@ -63,23 +63,24 @@ export default function EcosystemSection() {
           <span className="text-[#4C78E3]">{t("titleAccent")}</span>
           {t("titleAfter")}
         </h2>
-        <p className="mt-5 max-w-2xl text-center text-[17px] text-[#5F6D88] font-app-body">
+        <p className="my-5 max-w-2xl text-center text-[17px] text-[#5F6D88] font-app-body">
           {t("subtitle")}
         </p>
       </div>
 
-      <div className=" border-y border-white/80 bg-white ">
-        {/* <Image
-            src="/ecosystem-lighthouse.png"
-            alt={t("backgroundAlt")}
-            fill
-            priority
-            unoptimized
-            className="object-cover"
-            style={{ objectPosition: "center 40%" }}
-          /> */}
+      <div className="relative overflow-hidden border-y border-white/80 bg-white py-12">
+        <Image
+          src="/ecosystem-lighthouse.png"
+          alt={t("backgroundAlt")}
+          fill
+          priority
+          unoptimized
+          className="object-cover"
+          style={{ objectPosition: "center 40%" }}
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.10)_0%,rgba(255,255,255,0.02)_28%,rgba(255,255,255,0.08)_100%)]" />
 
-        <div className="text-center">
+        <div className="relative z-10 text-center">
           <div className="mx-auto mb-4 w-fit">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#FFF1D6]/80 text-[#D99522] shadow-[0_14px_34px_rgba(217,149,34,0.22)] backdrop-blur-[12px] transition duration-300 group-hover:scale-[1.04] group-hover:bg-[#FFF5E4]/92 group-hover:shadow-[0_16px_40px_rgba(217,149,34,0.3)]">
               <Boxes size={34} strokeWidth={2.1} />
@@ -110,7 +111,7 @@ export default function EcosystemSection() {
           </div>
         </div>
 
-        <div className="flex flex-col mt-10">
+        <div className="relative z-10 mt-10 flex flex-col">
           <div className="flex flex-row items-start justify-center gap-6">
             {companies.slice(0, 2).map((company) => (
               <div key={company.title} className={company.cardWidth}>
