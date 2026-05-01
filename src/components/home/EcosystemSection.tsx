@@ -13,14 +13,6 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-const bodyFontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
-
 const companyIcons = [Boxes, Leaf, Lightbulb, HandHeart];
 const companyAccentClasses = [
   {
@@ -89,23 +81,20 @@ export default function EcosystemSection() {
       <div className="mx-auto max-w-7xl px-6 text-center md:px-10 lg:px-16">
         <div className="mx-auto mb-14 flex max-w-4xl flex-col items-center text-center">
           <div
-            className="mb-5 inline-flex items-center gap-3 rounded-full border border-[#DCE7FA] bg-white px-5 py-2 text-sm uppercase tracking-[0.22em] text-[#6B7A99]"
-            style={bodyFontStyle}
+            className="mb-5 inline-flex items-center gap-3 rounded-full border border-[#DCE7FA] bg-white px-5 py-2 text-sm uppercase tracking-[0.22em] text-[#6B7A99] font-app-body"
           >
             <span className="inline-block h-px w-7 shrink-0 bg-[#7AA9E8]" />
             {t("badge")}
           </div>
           <h2
-            className="text-[34px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#16346A] md:text-[50px]"
-            style={headingFontStyle}
+            className="text-[34px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#16346A] md:text-[50px] font-app-heading"
           >
             {t("titleBefore")}
             <span className="text-[#4C78E3]">{t("titleAccent")}</span>
             {t("titleAfter")}
           </h2>
           <p
-            className="mx-auto mt-5 max-w-2xl text-center text-[17px] leading-[1.9] text-[#5F6D88] md:text-[18px]"
-            style={bodyFontStyle}
+            className="mx-auto mt-5 max-w-2xl text-center text-[17px] leading-[1.9] text-[#5F6D88] md:text-[18px] font-app-body"
           >
             {t("subtitle")}
           </p>
@@ -166,20 +155,17 @@ export default function EcosystemSection() {
               <Boxes size={34} strokeWidth={2.1} />
             </div>
             <div
-              className="text-[14px] font-semibold uppercase tracking-[0.32em] text-[#D19B2F] md:text-[16px]"
-              style={bodyFontStyle}
+              className="text-[14px] font-semibold uppercase tracking-[0.32em] text-[#D19B2F] md:text-[16px] font-app-body"
             >
               {t("mainBadge")}
             </div>
             <h3
-              className="mt-4 text-[54px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[82px]"
-              style={headingFontStyle}
+              className="mt-4 text-[54px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[82px] font-app-heading"
             >
               {t("mainTitle")}
             </h3>
             <div
-              className="mt-5 inline-flex items-center gap-4 text-[14px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[15px]"
-              style={bodyFontStyle}
+              className="mt-5 inline-flex items-center gap-4 text-[14px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[15px] font-app-body"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
               {t("mainTagline")}
@@ -225,8 +211,7 @@ export default function EcosystemSection() {
               className="animate-bounce opacity-95 [animation-duration:1.8s]"
             />
             <span
-              className="mt-4 text-[15px] font-semibold uppercase tracking-[0.3em]"
-              style={bodyFontStyle}
+              className="mt-4 text-[15px] font-semibold uppercase tracking-[0.3em] font-app-body"
             >
               {t("scrollLabel")}
             </span>
@@ -272,8 +257,7 @@ function CompanyCard({
 
         <div className="min-w-0 flex-1 text-left">
           <h4
-            className="text-[18px] font-extrabold leading-[1.2] tracking-[-0.03em] text-[#163E7A] md:text-[20px]"
-            style={headingFontStyle}
+            className="text-[18px] font-extrabold leading-[1.2] tracking-[-0.03em] text-[#163E7A] md:text-[20px] font-app-heading"
           >
             {title}
           </h4>
@@ -289,20 +273,17 @@ function CompanyCard({
 
       <div className="pointer-events-none absolute left-1/2 top-[calc(100%-8px)] z-30 w-[320px] -translate-x-1/2 rounded-[24px] border border-white/80 bg-white/78 p-5 opacity-0 shadow-[0_22px_54px_rgba(94,128,184,0.18)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-3 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-3 group-focus-within:opacity-100">
         <h5
-          className="text-[18px] font-extrabold tracking-[-0.02em] text-[#163E7A]"
-          style={headingFontStyle}
+          className="text-[18px] font-extrabold tracking-[-0.02em] text-[#163E7A] font-app-heading"
         >
           {title}
         </h5>
         <p
-          className="mt-3 text-[14px] leading-[1.65] text-[#6F7E98]"
-          style={bodyFontStyle}
+          className="mt-3 text-[14px] leading-[1.65] text-[#6F7E98] font-app-body"
         >
           {summary}
         </p>
         <span
-          className="mt-4 inline-flex text-[12px] font-semibold uppercase tracking-[0.18em] text-[#5C84D6]"
-          style={bodyFontStyle}
+          className="mt-4 inline-flex text-[12px] font-semibold uppercase tracking-[0.18em] text-[#5C84D6] font-app-body"
         >
           {cta}
         </span>

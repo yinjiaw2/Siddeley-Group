@@ -1,24 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useLocale, useMessages, useTranslations } from "next-intl";
-
-const fontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
+import { useMessages, useTranslations } from "next-intl";
 
 export default function GroupIntroSection() {
   const t = useTranslations("home");
-  const locale = useLocale();
   const messages = useMessages();
-  const accentFont =
-    locale === "en"
-      ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-noto-serif-sc), Georgia, serif";
   const rawParagraphs = messages.home?.groupIntro?.paragraphs;
   const paragraphs = Array.isArray(rawParagraphs)
     ? rawParagraphs
@@ -33,18 +20,14 @@ export default function GroupIntroSection() {
             {t("groupIntro.badge")}
           </div>
           <h2
-            className="max-w-xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[54px]"
-            style={headingFontStyle}
+            className="max-w-xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[54px] font-app-heading"
           >
             {t("groupIntro.titleBefore")}
-            <span style={{ color: "#F5C400", fontFamily: accentFont }}>
-              {t("groupIntro.titleAccent")}
-            </span>
+            <span className="text-[#F5C400]">{t("groupIntro.titleAccent")}</span>
             {t("groupIntro.titleAfter")}
           </h2>
           <div
-            className="mt-8 space-y-6 text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px]"
-            style={fontStyle}
+            className="mt-8 space-y-6 text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px] font-app-body"
           >
             {paragraphs.map((paragraph, index) => (
               <p key={`${index}-${paragraph}`}>{paragraph}</p>

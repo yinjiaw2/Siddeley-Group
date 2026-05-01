@@ -1,24 +1,12 @@
 "use client";
 
 import { MessageSquare, Compass, Rocket, ShieldCheck } from "lucide-react";
-import { useLocale, useTranslations } from "next-intl";
-
-const fontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
+import { useTranslations } from "next-intl";
 
 const icons = [MessageSquare, Compass, Rocket, ShieldCheck];
 
 export default function ClientJourneySection() {
   const t = useTranslations("approach.clientJourney");
-  const locale = useLocale();
-  const accentFont =
-    locale === "en"
-      ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-noto-serif-sc), Georgia, serif";
 
   const steps = [1, 2, 3, 4].map((n, i) => ({
     Icon: icons[i]!,
@@ -36,18 +24,14 @@ export default function ClientJourneySection() {
             {t("badge")}
           </div>
           <h2
-            className="max-w-2xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-white md:text-[48px] lg:text-[54px]"
-            style={headingFontStyle}
+            className="max-w-2xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-white md:text-[48px] lg:text-[54px] font-app-heading"
           >
             {t("titleBefore")}
-            <span style={{ color: "#F5C400", fontFamily: accentFont }}>
-              {t("titleAccent")}
-            </span>
+            <span className="text-[#F5C400]">{t("titleAccent")}</span>
             {t("titleAfter")}
           </h2>
           <p
-            className="mt-6 max-w-2xl text-[17px] leading-[1.9] text-[#6A6A6A] md:text-[18px]"
-            style={fontStyle}
+            className="mt-6 max-w-2xl text-[17px] leading-[1.9] text-[#6A6A6A] md:text-[18px] font-app-body"
           >
             {t("subtitle")}
           </p>
@@ -75,14 +59,12 @@ export default function ClientJourneySection() {
                 </div>
                 <div>
                   <h3
-                    className="mb-3 text-[19px] font-bold text-white"
-                    style={headingFontStyle}
+                    className="mb-3 text-[19px] font-bold text-white font-app-heading"
                   >
                     {title}
                   </h3>
                   <p
-                    className="text-[15px] leading-[1.8] text-[#7A7A7A]"
-                    style={fontStyle}
+                    className="text-[15px] leading-[1.8] text-[#7A7A7A] font-app-body"
                   >
                     {desc}
                   </p>

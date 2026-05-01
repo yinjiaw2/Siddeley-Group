@@ -2,19 +2,12 @@
 
 import { useState } from "react";
 import { Link } from "lucide-react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import {
   leadershipMembers,
   type LeadershipCategory,
 } from "@/utils/leadershipTeam";
-
-const fontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
 
 type Category = "all" | LeadershipCategory;
 
@@ -28,11 +21,6 @@ function getInitials(name: string): string {
 export default function LeadershipTeamSection() {
   const [active, setActive] = useState<Category>("all");
   const t = useTranslations("about.leadership");
-  const locale = useLocale();
-  const accentFont =
-    locale === "en"
-      ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-noto-serif-sc), Georgia, serif";
 
   const filters: { key: Category; label: string }[] = [
     { key: "all", label: t("filterAll") },
@@ -58,9 +46,7 @@ export default function LeadershipTeamSection() {
           </div>
           <h2 className="font-app-heading max-w-xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[54px]">
             {t("titleBefore")}
-            <span style={{ color: "#F5C400", fontFamily: accentFont }}>
-              {t("titleAccent")}
-            </span>
+            <span className="text-[#F5C400]">{t("titleAccent")}</span>
             {t("titleAfter")}
           </h2>
           <p className="font-app-body mt-6 max-w-2xl text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px]">
@@ -79,8 +65,7 @@ export default function LeadershipTeamSection() {
                 active === key
                   ? "bg-[#F5C400] text-[#1A1A1A] shadow-[0_4px_12px_rgba(245,196,0,0.30)]"
                   : "border border-[#E0DAD0] bg-white text-[#5F5854] hover:border-[#F5C400] hover:text-[#1A1A1A]"
-              }`}
-              style={fontStyle}
+              } font-app-body`}
             >
               {label}
             </button>
@@ -121,14 +106,12 @@ export default function LeadershipTeamSection() {
                 {/* Info */}
                 <div className="flex flex-1 flex-col gap-1 p-5">
                   <h3
-                    className="text-[16px] font-bold text-[#1A1A1A]"
-                    style={headingFontStyle}
+                    className="text-[16px] font-bold text-[#1A1A1A] font-app-heading"
                   >
                     {member.name}
                   </h3>
                   <p
-                    className="text-[13px] leading-[1.6] text-[#7A7A7A]"
-                    style={fontStyle}
+                    className="text-[13px] leading-[1.6] text-[#7A7A7A] font-app-body"
                   >
                     {role}
                   </p>
@@ -138,8 +121,7 @@ export default function LeadershipTeamSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${member.name} LinkedIn`}
-                      className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#9A9A9A] transition-colors duration-200 hover:text-[#C79D00]"
-                      style={fontStyle}
+                      className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#9A9A9A] transition-colors duration-200 hover:text-[#C79D00] font-app-body"
                     >
                       <Link size={14} />
                       {t("linkedinLabel")}

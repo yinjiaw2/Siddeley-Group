@@ -6,14 +6,6 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
-const fontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-
-const brandHeadingStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
-
 export default function NavBar() {
   const t = useTranslations("header");
   const locale = useLocale();
@@ -100,8 +92,7 @@ export default function NavBar() {
               <span
                 className={`text-[28px] font-extrabold tracking-[-0.03em] ${
                   isTransparent ? "text-white" : "text-slate-900"
-                }`}
-                style={brandHeadingStyle}
+                } font-app-heading`}
               >
                 Siddeley Group
               </span>
@@ -112,8 +103,7 @@ export default function NavBar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`rounded-md px-4 py-2 text-base font-medium transition-colors duration-150 ${desktopTextClass}`}
-                  style={fontStyle}
+                  className={`rounded-md px-4 py-2 text-base font-medium transition-colors duration-150 font-app-body ${desktopTextClass}`}
                 >
                   {link.label}
                 </Link>
@@ -122,8 +112,7 @@ export default function NavBar() {
               <button
                 type="button"
                 onClick={handleLocaleChange}
-                className={`ml-2 rounded-md border px-3 py-2 text-base font-medium transition-colors duration-150 ${desktopButtonClass}`}
-                style={fontStyle}
+                className={`ml-2 rounded-md border px-3 py-2 text-base font-medium transition-colors duration-150 font-app-body ${desktopButtonClass}`}
                 aria-label={t("localeSwitch.ariaLabel")}
               >
                 {t(`localeSwitch.${nextLocale}`)}
@@ -163,8 +152,7 @@ export default function NavBar() {
             key={link.href}
             href={link.href}
             onClick={() => setMenuOpen(false)}
-            className="border-b border-white/10 py-4 text-lg font-medium text-gray-300 transition-colors duration-150 hover:text-white"
-            style={fontStyle}
+            className="border-b border-white/10 py-4 text-lg font-medium text-gray-300 transition-colors duration-150 hover:text-white font-app-body"
           >
             {link.label}
           </Link>
@@ -173,8 +161,7 @@ export default function NavBar() {
         <button
           type="button"
           onClick={handleLocaleChange}
-          className="w-full border-b border-white/10 py-4 text-left text-lg font-medium text-gray-300 transition-colors duration-150 hover:text-white"
-          style={fontStyle}
+          className="w-full border-b border-white/10 py-4 text-left text-lg font-medium text-gray-300 transition-colors duration-150 hover:text-white font-app-body"
           aria-label={t("localeSwitch.ariaLabel")}
         >
           {t(`localeSwitch.${nextLocale}`)}

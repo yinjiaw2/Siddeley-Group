@@ -2,10 +2,6 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { MapPin } from "lucide-react";
 
-const font = "var(--font-app-body), Arial, Helvetica, sans-serif";
-const brandHeadingStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
 const googleMapsHref =
   "https://www.google.com/maps/search/?api=1&query=Level%209%20Tower%203%2F18-38%20Siddeley%20St";
 
@@ -15,7 +11,10 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <footer style={{ fontFamily: font, backgroundColor: "#111111" }} className="text-white">
+    <footer
+      style={{ backgroundColor: "#111111" }}
+      className="text-white font-app-body"
+    >
       {/* 顶部黄色细线 */}
       <div className="h-px w-full bg-gradient-to-r from-transparent via-[#F5C400]/50 to-transparent" />
 
@@ -26,8 +25,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/#hero" className="inline-flex items-center">
               <span
-                className="text-[34px] font-extrabold tracking-[-0.03em] text-white"
-                style={brandHeadingStyle}
+                className="text-[34px] font-extrabold tracking-[-0.03em] text-white font-app-heading"
               >
                 Siddeley Group
               </span>

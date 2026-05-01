@@ -1,25 +1,12 @@
 "use client";
 
 import { Layers, Zap, TrendingUp, Target } from "lucide-react";
-import { useLocale, useTranslations } from "next-intl";
-
-const fontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
+import { useTranslations } from "next-intl";
 
 const icons = [Layers, Zap, TrendingUp, Target];
 
 export default function SiddeleyAdvantageSection() {
   const t = useTranslations("approach.siddeleyAdvantage");
-  const locale = useLocale();
-  const accentFont =
-    locale === "en"
-      ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-noto-serif-sc), Georgia, serif";
 
   const items = [1, 2, 3, 4].map((n, i) => ({
     Icon: icons[i]!,
@@ -37,18 +24,14 @@ export default function SiddeleyAdvantageSection() {
               {t("badge")}
             </div>
             <h2
-              className="max-w-xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[54px]"
-              style={headingFontStyle}
+              className="max-w-xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[54px] font-app-heading"
             >
               {t("titleBefore")}
-              <span style={{ color: "#F5C400", fontFamily: accentFont }}>
-                {t("titleAccent")}
-              </span>
+              <span className="text-[#F5C400]">{t("titleAccent")}</span>
               {t("titleAfter")}
             </h2>
             <p
-              className="mt-8 text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px]"
-              style={fontStyle}
+              className="mt-8 text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px] font-app-body"
             >
               {t("subtitle")}
             </p>
@@ -68,14 +51,12 @@ export default function SiddeleyAdvantageSection() {
                   />
                 </div>
                 <h3
-                  className="text-[17px] font-bold text-[#1A1A1A]"
-                  style={headingFontStyle}
+                  className="text-[17px] font-bold text-[#1A1A1A] font-app-heading"
                 >
                   {title}
                 </h3>
                 <p
-                  className="text-[16px] leading-[1.8] text-[#6B6B6B]"
-                  style={fontStyle}
+                  className="text-[16px] leading-[1.8] text-[#6B6B6B] font-app-body"
                 >
                   {desc}
                 </p>

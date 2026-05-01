@@ -1,21 +1,9 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
-
-const fontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
+import { useTranslations } from "next-intl";
 
 export default function CoreValuesSection() {
   const t = useTranslations("about.coreValues");
-  const locale = useLocale();
-  const accentFont =
-    locale === "en"
-      ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-noto-serif-sc), Georgia, serif";
 
   const values = [1, 2, 3, 4, 5, 6].map((n) => ({
     number: t(`value${n}Number`),
@@ -35,18 +23,14 @@ export default function CoreValuesSection() {
               {t("badge")}
             </div>
             <h2
-              className="text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[44px] xl:text-[52px]"
-              style={headingFontStyle}
+              className="text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[44px] xl:text-[52px] font-app-heading"
             >
               {t("titleBefore")}
-              <span style={{ color: "#F5C400", fontFamily: accentFont }}>
-                {t("titleAccent")}
-              </span>
+              <span className="text-[#F5C400]">{t("titleAccent")}</span>
               {t("titleAfter")}
             </h2>
             <p
-              className="mt-6 text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px]"
-              style={fontStyle}
+              className="mt-6 text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px] font-app-body"
             >
               {t("subtitle")}
             </p>
@@ -60,20 +44,17 @@ export default function CoreValuesSection() {
                 className="group flex flex-col rounded-[20px] border border-[#E8E3D8] bg-[#FAFAF8] p-7 transition-all duration-300 hover:border-[#F5C400] hover:bg-[#FFFBEE] hover:shadow-[0_8px_30px_rgba(245,196,0,0.12)]"
               >
                 <span
-                  className="mb-4 text-[12px] font-bold uppercase tracking-[0.28em] text-[#C79D00]"
-                  style={fontStyle}
+                  className="mb-4 text-[12px] font-bold uppercase tracking-[0.28em] text-[#C79D00] font-app-body"
                 >
                   {number}
                 </span>
                 <h3
-                  className="mb-3 text-[19px] font-extrabold text-[#1A1A1A]"
-                  style={headingFontStyle}
+                  className="mb-3 text-[19px] font-extrabold text-[#1A1A1A] font-app-heading"
                 >
                   {title}
                 </h3>
                 <p
-                  className="text-[15px] leading-[1.85] text-[#6B6B6B]"
-                  style={fontStyle}
+                  className="text-[15px] leading-[1.85] text-[#6B6B6B] font-app-body"
                 >
                   {desc}
                 </p>

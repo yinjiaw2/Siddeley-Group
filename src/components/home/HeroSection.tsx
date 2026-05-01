@@ -2,10 +2,6 @@
 
 import { useTranslations } from "next-intl";
 
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
-
 export default function HeroSection() {
   const t = useTranslations("home");
   const heroTitleLines = [
@@ -37,8 +33,7 @@ export default function HeroSection() {
       <div className="relative z-10 mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-7xl items-center justify-center px-6 py-24 text-center md:px-10 lg:px-16">
         <div className="max-w-5xl">
           <h1
-            className="text-5xl font-extrabold leading-tight text-white md:text-6xl lg:text-7xl"
-            style={{ ...headingFontStyle, letterSpacing: "-0.02em" }}
+            className="text-5xl font-extrabold leading-tight tracking-[-0.02em] text-white md:text-6xl lg:text-7xl font-app-heading"
           >
             {heroTitleLines.map((line, index) => (
               <span

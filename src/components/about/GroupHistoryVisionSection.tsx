@@ -1,23 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useLocale, useMessages, useTranslations } from "next-intl";
-
-const fontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
+import { useMessages, useTranslations } from "next-intl";
 
 export default function GroupHistoryVisionSection() {
   const t = useTranslations("about.historyVision");
-  const locale = useLocale();
   const messages = useMessages();
-  const accentFont =
-    locale === "en"
-      ? "var(--font-playfair-display), Georgia, serif"
-      : "var(--font-noto-serif-sc), Georgia, serif";
 
   const rawParagraphs = (messages.about as Record<string, unknown> | undefined)
     ?.historyVision as { paragraphs?: unknown } | undefined;
@@ -37,18 +25,14 @@ export default function GroupHistoryVisionSection() {
               {t("badge")}
             </div>
             <h2
-              className="max-w-xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[54px]"
-              style={headingFontStyle}
+              className="max-w-xl text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#1A1A1A] md:text-[48px] lg:text-[54px] font-app-heading"
             >
               {t("titleBefore")}
-              <span style={{ color: "#F5C400", fontFamily: accentFont }}>
-                {t("titleAccent")}
-              </span>
+              <span className="text-[#F5C400]">{t("titleAccent")}</span>
               {t("titleAfter")}
             </h2>
             <div
-              className="mt-8 space-y-6 text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px]"
-              style={fontStyle}
+              className="mt-8 space-y-6 text-[17px] leading-[1.9] text-[#5F5854] md:text-[18px] font-app-body"
             >
               {paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
@@ -77,16 +61,14 @@ export default function GroupHistoryVisionSection() {
                 {t("visionLabel")}
               </div>
               <h3
-                className="text-[24px] font-extrabold leading-tight tracking-[-0.02em] text-[#1A1A1A] md:text-[28px]"
-                style={headingFontStyle}
+                className="text-[24px] font-extrabold leading-tight tracking-[-0.02em] text-[#1A1A1A] md:text-[28px] font-app-heading"
               >
                 {t("visionTitle")}
               </h3>
             </div>
             <div className="border-t border-[#E0DAD0] pt-6 md:border-l md:border-t-0 md:pl-12 md:pt-0 lg:pl-20">
               <p
-                className="text-[17px] leading-[1.95] text-[#5F5854] md:text-[18px]"
-                style={fontStyle}
+                className="text-[17px] leading-[1.95] text-[#5F5854] md:text-[18px] font-app-body"
               >
                 {t("visionBody")}
               </p>
