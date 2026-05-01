@@ -66,5 +66,24 @@
     "value6Number": "06",
     "value6Title": "Impact",
     "value6Desc": "Growth only means something when it is measurable. We track what matters, report with clarity, and continuously push to improve what we deliver."
+  },
+  "csr": {
+    "badge": "Our Responsibility",
+    "titleBefore": "Business with",
+    "titleAccent": " a wider purpose",
+    "titleAfter": "",
+    "subtitle": "How we operate matters as much as what we deliver. These are the four areas where we hold ourselves accountable beyond the bottom line.",
+    "pillar1Label": "Environmental",
+    "pillar1Title": "Sustaining the environment",
+    "pillar1Desc": "We are committed to minimising our environmental footprint across all operations. This means making deliberate choices — in how we source, how we operate, and how we advise clients — that reduce our impact on the planet. We aim to be a group that grows without leaving a disproportionate cost on the world around us.",
+    "pillar2Label": "Social & Community",
+    "pillar2Title": "Strengthening communities",
+    "pillar2Desc": "We believe businesses have a responsibility to contribute beyond their revenue. Through partnerships, pro-bono work, and community-led initiatives, we invest in the social fabric of the markets we operate in. Our goal is to be a group whose presence makes its communities more connected, more capable, and more prosperous.",
+    "pillar3Label": "Workplace & Culture",
+    "pillar3Title": "Building a culture worth working in",
+    "pillar3Desc": "We hold ourselves to high standards as an employer. That means investing in our people, creating clear pathways for development, and maintaining a culture of inclusion where different perspectives are genuinely valued. We measure our culture not by what we say about it, but by how people actually experience it day to day.",
+    "pillar4Label": "Ethical Governance",
+    "pillar4Title": "Governing with integrity",
+    "pillar4Desc": "Sound governance is not a compliance exercise — it is a reflection of how seriously we take our responsibilities. We maintain rigorous standards in financial reporting, stakeholder disclosure, and decision-making at every level of the group. Ethical governance is what allows us to earn and keep the trust of our clients, partners, and people."
   }
 }

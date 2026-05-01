@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import GroupHistoryVisionSection from "@/components/about/GroupHistoryVisionSection";
 import LeadershipTeamSection from "@/components/about/LeadershipTeamSection";
 import CoreValuesSection from "@/components/about/CoreValuesSection";
+import CorporateResponsibilitySection from "@/components/about/CorporateResponsibilitySection";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -14,6 +15,7 @@ export default function AboutPage() {
       <GroupHistoryVisionSection />
       <LeadershipTeamSection />
       <CoreValuesSection />
+      <CorporateResponsibilitySection />
     </>
   );
 }
