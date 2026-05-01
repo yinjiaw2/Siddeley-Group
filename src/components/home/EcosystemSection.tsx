@@ -13,14 +13,6 @@ import {
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
-const bodyFontStyle = {
-  fontFamily: "var(--font-app-body), Arial, Helvetica, sans-serif",
-};
-
-const headingFontStyle = {
-  fontFamily: "var(--font-app-heading), Georgia, serif",
-};
-
 const companyIcons = [Boxes, Leaf, Lightbulb, HandHeart];
 const companyAccentClasses = [
   {
@@ -130,20 +122,17 @@ export default function EcosystemSection() {
               </div>
               <div className="pointer-events-none absolute left-1/2 top-[calc(100%+12px)] z-40 w-[280px] -translate-x-1/2 rounded-[22px] border border-white/80 bg-white/84 p-4 text-left opacity-0 shadow-[0_20px_48px_rgba(94,128,184,0.18)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-2 group-hover:opacity-100">
                 <p
-                  className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#D19B2F]"
-                  style={bodyFontStyle}
+                  className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#D19B2F] font-app-body"
                 >
                   {t("mainBadge")}
                 </p>
                 <h4
-                  className="mt-2 text-[18px] font-extrabold tracking-[-0.02em] text-[#163E7A]"
-                  style={headingFontStyle}
+                  className="mt-2 text-[18px] font-extrabold tracking-[-0.02em] text-[#163E7A] font-app-heading"
                 >
                   {t("mainTitle")}
                 </h4>
                 <p
-                  className="mt-2 text-[13px] leading-[1.65] text-[#6F7E98]"
-                  style={bodyFontStyle}
+                  className="mt-2 text-[13px] leading-[1.65] text-[#6F7E98] font-app-body"
                 >
                   {t("mainSubtitle")}
                 </p>
@@ -155,14 +144,12 @@ export default function EcosystemSection() {
               {t("mainBadge")}
             </div>
             <h3
-              className="mt-4 text-[48px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[72px]"
-              style={headingFontStyle}
+              className="mt-4 text-[48px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[72px] font-app-heading"
             >
               {t("mainTitle")}
             </h3>
             <div
-              className="mt-4 inline-flex items-center gap-4 text-[13px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[14px]"
-              style={bodyFontStyle}
+              className="mt-4 inline-flex items-center gap-4 text-[13px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[14px] font-app-body"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
               <span>
@@ -250,8 +237,7 @@ function CompanyCard({
 
         <div className="min-w-0 flex-1 text-left">
           <h4
-            className="text-[17px] font-extrabold leading-[1.2] tracking-[-0.03em] text-[#163E7A] md:text-[18px]"
-            style={headingFontStyle}
+            className="text-[17px] font-extrabold leading-[1.2] tracking-[-0.03em] text-[#163E7A] md:text-[18px] font-app-heading"
           >
             {title}
           </h4>
@@ -272,20 +258,17 @@ function CompanyCard({
           {title}
         </h5>
         <p
-          className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#5C84D6]"
-          style={bodyFontStyle}
+          className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#5C84D6] font-app-body"
         >
           {tagline}
         </p>
         <p
-          className="mt-3 text-[14px] leading-[1.65] text-[#6F7E98]"
-          style={bodyFontStyle}
+          className="mt-3 text-[14px] leading-[1.65] text-[#6F7E98] font-app-body"
         >
           {body}
         </p>
         <span
-          className="mt-4 inline-flex rounded-full border border-[#CFE0FF] bg-[#EEF4FF] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#4D77D8]"
-          style={bodyFontStyle}
+          className="mt-4 inline-flex rounded-full border border-[#CFE0FF] bg-[#EEF4FF] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#4D77D8] font-app-body"
         >
           {cta}
         </span>
