@@ -2,7 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Boxes, HandHeart, Leaf, Lightbulb } from "lucide-react";
+import {
+  ArrowRight,
+  Boxes,
+  ChevronDown,
+  HandHeart,
+  Leaf,
+  Lightbulb,
+  Mouse,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const bodyFontStyle = {
@@ -15,17 +23,26 @@ const headingFontStyle = {
 
 const companyIcons = [Boxes, Leaf, Lightbulb, HandHeart];
 const companyAccentClasses = [
-  "bg-[#FFF4E9] text-[#E29A24]",
-  "bg-[#EDF4FF] text-[#357AF6]",
-  "bg-[#F3EEFF] text-[#7D59D3]",
-  "bg-[#EEF8EF] text-[#4A9C5A]",
-];
-
-const desktopOffsets = [
-  "-translate-y-10",
-  "translate-y-0",
-  "translate-y-0",
-  "-translate-y-10",
+  {
+    chip: "bg-[#FFF4E8] text-[#D99522]",
+    dot: "bg-[#F0B13E]",
+    arrow: "bg-[#FFE4B2] text-[#D99522]",
+  },
+  {
+    chip: "bg-[#EAF1FF] text-[#4C84FF]",
+    dot: "bg-[#5E8FFF]",
+    arrow: "bg-[#DDE9FF] text-[#4C84FF]",
+  },
+  {
+    chip: "bg-[#F0E9FF] text-[#8B63E8]",
+    dot: "bg-[#9A73FF]",
+    arrow: "bg-[#E7DDFF] text-[#8B63E8]",
+  },
+  {
+    chip: "bg-[#ECFAEE] text-[#67B76E]",
+    dot: "bg-[#74C97C]",
+    arrow: "bg-[#DDF5E0] text-[#67B76E]",
+  },
 ];
 
 const companyLinks = [
@@ -35,18 +52,33 @@ const companyLinks = [
   "https://goodmood-self.vercel.app/",
 ];
 
+const desktopCardPositions = [
+  "left-[10%] top-[34%]",
+  "left-[27%] top-[44%]",
+  "right-[29%] top-[44.5%]",
+  "right-[10%] top-[35%]",
+];
+
+const desktopAnchorPositions = [
+  "left-[16%] top-[67%]",
+  "left-[34.5%] top-[72%]",
+  "right-[34.5%] top-[71.5%]",
+  "right-[14.5%] top-[65.5%]",
+];
+
 export default function EcosystemSection() {
   const t = useTranslations("home.ecosystem");
 
   const companies = [1, 2, 3, 4].map((index) => ({
     title: t(`company${index}Title`),
-    tagline: t(`company${index}Tagline`),
     body: t(`company${index}Body`),
     cta: t(`company${index}Cta`),
+    summary: t(`company${index}Summary`),
     Icon: companyIcons[index - 1]!,
-    accentClass: companyAccentClasses[index - 1]!,
-    desktopOffset: desktopOffsets[index - 1]!,
+    accent: companyAccentClasses[index - 1]!,
     href: companyLinks[index - 1]!,
+    cardPosition: desktopCardPositions[index - 1]!,
+    anchorPosition: desktopAnchorPositions[index - 1]!,
   }));
 
   return (
@@ -81,7 +113,7 @@ export default function EcosystemSection() {
       </div>
 
       <div className="relative overflow-hidden border-y border-white/80 bg-white shadow-[0_28px_80px_rgba(88,126,186,0.16)]">
-        <div className="relative aspect-[16/10] min-h-[760px] md:min-h-[920px] lg:min-h-[760px]">
+        <div className="relative h-[760px] md:h-[900px] lg:h-[980px]">
           <Image
             src="/ecosystem-lighthouse.png"
             alt={t("backgroundAlt")}
@@ -89,80 +121,120 @@ export default function EcosystemSection() {
             priority
             unoptimized
             className="object-cover"
-            style={{ objectPosition: "center 30%" }}
+            style={{ objectPosition: "center 42%" }}
           />
 
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0.015)_36%,rgba(255,255,255,0.08)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.10)_0%,rgba(255,255,255,0.02)_28%,rgba(255,255,255,0.08)_100%)]" />
 
-          <div className="group absolute left-[52.5%] top-[12%] z-30 w-[min(84%,520px)] -translate-x-1/2 -translate-y-1/2 text-center">
-            <div className="rounded-[28px] border border-white/72 bg-white/36 px-6 py-5 shadow-[0_16px_48px_rgba(92,121,168,0.14)] backdrop-blur-[18px] md:px-8 md:py-6">
-              <div
-                className="mb-2 inline-flex rounded-full bg-white/55 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.18em] text-[#6E85B5] backdrop-blur-[10px]"
-                style={bodyFontStyle}
-              >
-                {t("mainBadge")}
-              </div>
-              <h3
-                className="text-[28px] font-extrabold tracking-[-0.03em] text-[#15366B] md:text-[34px]"
-                style={headingFontStyle}
-              >
-                {t("mainTitle")}
-              </h3>
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 1600 980"
+            className="pointer-events-none absolute inset-0 hidden h-full w-full lg:block"
+          >
+            <path
+              d="M 800 330 C 640 300, 360 310, 255 520"
+              fill="none"
+              stroke="rgba(255,255,255,0.62)"
+              strokeDasharray="7 9"
+              strokeWidth="3"
+            />
+            <path
+              d="M 800 330 C 705 315, 595 355, 550 560"
+              fill="none"
+              stroke="rgba(255,255,255,0.62)"
+              strokeDasharray="7 9"
+              strokeWidth="3"
+            />
+            <path
+              d="M 800 330 C 915 320, 1040 360, 1060 560"
+              fill="none"
+              stroke="rgba(255,255,255,0.62)"
+              strokeDasharray="7 9"
+              strokeWidth="3"
+            />
+            <path
+              d="M 800 330 C 965 300, 1240 315, 1340 520"
+              fill="none"
+              stroke="rgba(255,255,255,0.62)"
+              strokeDasharray="7 9"
+              strokeWidth="3"
+            />
+          </svg>
+
+          <div className="absolute left-1/2 top-[13%] z-30 w-[min(88%,760px)] -translate-x-1/2 text-center">
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FFF1D6]/80 text-[#D99522] shadow-[0_14px_34px_rgba(217,149,34,0.22)] backdrop-blur-[12px]">
+              <Boxes size={34} strokeWidth={2.1} />
             </div>
-
-            <div className="pointer-events-none absolute left-1/2 top-full z-50 mt-3 w-[min(92vw,420px)] -translate-x-1/2 rounded-[24px] border border-white/78 bg-white/54 px-6 py-4 opacity-0 shadow-[0_20px_48px_rgba(94,128,184,0.14)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-1 group-hover:opacity-100">
-              <p
-                className="text-[15px] leading-[1.8] text-[#66748F] md:text-[16px]"
-                style={bodyFontStyle}
-              >
-                {t("mainSubtitle")}
-              </p>
+            <div
+              className="text-[14px] font-semibold uppercase tracking-[0.32em] text-[#D19B2F] md:text-[16px]"
+              style={bodyFontStyle}
+            >
+              {t("mainBadge")}
+            </div>
+            <h3
+              className="mt-4 text-[54px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[82px]"
+              style={headingFontStyle}
+            >
+              {t("mainTitle")}
+            </h3>
+            <div
+              className="mt-5 inline-flex items-center gap-4 text-[14px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[15px]"
+              style={bodyFontStyle}
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
+              {t("mainTagline")}
+              <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
             </div>
           </div>
 
-          <div className="relative z-10 grid grid-cols-2 justify-items-center gap-x-5 gap-y-6 px-4 pb-8 pt-[56%] md:px-8 md:pt-[54%] lg:hidden">
-            {companies.map(({ title, tagline, body, cta, Icon, accentClass, href }) => (
-              <CompanyCard
-                key={title}
-                title={title}
-                tagline={tagline}
-                body={body}
-                cta={cta}
-                Icon={Icon}
-                accentClass={accentClass}
-                href={href}
-              />
+          <div className="relative z-20 grid gap-5 px-4 pb-16 pt-[54%] md:grid-cols-2 md:px-8 md:pt-[50%] lg:hidden">
+            {companies.map((company) => (
+              <CompanyCard key={company.title} company={company} />
             ))}
           </div>
 
-          <div className="absolute inset-x-0 top-[25%] z-10 hidden lg:flex lg:justify-center">
-            <div className="flex w-full max-w-[1480px] items-start justify-between px-20">
-              {companies.map(
-                ({
-                  title,
-                  tagline,
-                  body,
-                  cta,
-                  Icon,
-                  accentClass,
-                  desktopOffset,
-                  href,
-                }) => (
-                  <div key={title} className={desktopOffset}>
-                    <CompanyCard
-                      title={title}
-                      tagline={tagline}
-                      body={body}
-                      cta={cta}
-                      Icon={Icon}
-                      accentClass={accentClass}
-                      href={href}
-                    />
-                  </div>
-                ),
-              )}
-            </div>
+          <div className="absolute inset-0 z-20 hidden lg:block">
+            {companies.map((company) => (
+              <div key={company.title}>
+                <div
+                  className={`absolute ${company.cardPosition} w-[320px]`}
+                >
+                  <CompanyCard company={company} />
+                </div>
+                <div
+                  className={`absolute ${company.anchorPosition} flex -translate-x-1/2 -translate-y-1/2 flex-col items-center`}
+                >
+                  <div
+                    className={`h-24 w-px bg-[linear-gradient(180deg,rgba(255,255,255,0.0)_0%,rgba(255,255,255,0.92)_100%)]`}
+                  />
+                  <div
+                    className={`h-5 w-5 rounded-full border-4 border-white shadow-[0_0_24px_rgba(255,255,255,0.95)] ${company.accent.dot}`}
+                  />
+                </div>
+              </div>
+            ))}
           </div>
+
+          <Link
+            href="#process"
+            className="absolute bottom-[8%] left-1/2 z-20 hidden -translate-x-1/2 flex-col items-center text-white lg:flex"
+          >
+            <Mouse
+              size={26}
+              strokeWidth={1.7}
+              className="animate-bounce opacity-95 [animation-duration:1.8s]"
+            />
+            <span
+              className="mt-4 text-[15px] font-semibold uppercase tracking-[0.3em]"
+              style={bodyFontStyle}
+            >
+              {t("scrollLabel")}
+            </span>
+            <ChevronDown
+              size={18}
+              className="mt-2 animate-bounce [animation-delay:180ms] [animation-duration:1.8s]"
+            />
+          </Link>
         </div>
       </div>
     </section>
@@ -170,71 +242,70 @@ export default function EcosystemSection() {
 }
 
 function CompanyCard({
-  title,
-  tagline,
-  body,
-  cta,
-  Icon,
-  accentClass,
-  href,
+  company,
 }: {
-  title: string;
-  tagline: string;
-  body: string;
-  cta: string;
-  Icon: typeof Boxes;
-  accentClass: string;
-  href: string;
+  company: {
+    title: string;
+    body: string;
+    cta: string;
+    summary: string;
+    Icon: typeof Boxes;
+    accent: { chip: string; dot: string; arrow: string };
+    href: string;
+  };
 }) {
+  const { title, summary, cta, Icon, accent, href } = company;
+
   return (
     <div className="group relative">
       <Link
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="flex min-h-[72px] min-w-[220px] items-center justify-center gap-3 rounded-full border border-white/74 bg-white/34 px-5 py-4 text-center shadow-[0_16px_40px_rgba(112,148,207,0.12)] backdrop-blur-[18px] transition-all duration-300 hover:-translate-y-1 hover:bg-white/48"
+        className="flex min-h-[98px] items-center gap-4 rounded-[30px] border border-white/65 bg-white/54 px-6 py-5 shadow-[0_22px_60px_rgba(102,132,186,0.16)] backdrop-blur-[18px] transition-all duration-300 hover:-translate-y-1 hover:bg-white/64"
       >
         <div
-          className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${accentClass} bg-opacity-90`}
+          className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${accent.chip}`}
         >
-          <Icon size={24} strokeWidth={2.1} />
+          <Icon size={26} strokeWidth={2.1} />
         </div>
-        <h3
-          className="text-left text-[18px] font-extrabold leading-[1.15] tracking-[-0.025em] text-[#20406F]"
-          style={headingFontStyle}
+
+        <div className="min-w-0 flex-1 text-left">
+          <h4
+            className="text-[18px] font-extrabold leading-[1.2] tracking-[-0.03em] text-[#163E7A] md:text-[20px]"
+            style={headingFontStyle}
+          >
+            {title}
+          </h4>
+        </div>
+
+        <div
+          className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5 ${accent.arrow}`}
+          aria-label={cta}
         >
-          {title}
-        </h3>
+          <ArrowRight size={16} strokeWidth={2.2} />
+        </div>
       </Link>
 
-      <div className="pointer-events-none absolute left-1/2 top-[calc(100%-6px)] z-20 w-[312px] -translate-x-1/2 rounded-[22px] border border-white/78 bg-white/56 p-4 opacity-0 shadow-[0_20px_48px_rgba(94,128,184,0.14)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-3 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-3 group-focus-within:opacity-100">
-        <h4
-          className="text-[18px] font-extrabold tracking-[-0.02em] text-[#20406F]"
+      <div className="pointer-events-none absolute left-1/2 top-[calc(100%-8px)] z-30 w-[320px] -translate-x-1/2 rounded-[24px] border border-white/80 bg-white/78 p-5 opacity-0 shadow-[0_22px_54px_rgba(94,128,184,0.18)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-3 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-3 group-focus-within:opacity-100">
+        <h5
+          className="text-[18px] font-extrabold tracking-[-0.02em] text-[#163E7A]"
           style={headingFontStyle}
         >
           {title}
-        </h4>
+        </h5>
         <p
-          className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#4C78E3]"
+          className="mt-3 text-[14px] leading-[1.65] text-[#6F7E98]"
           style={bodyFontStyle}
         >
-          {tagline}
+          {summary}
         </p>
-        <p
-          className="mt-3 text-[13px] leading-[1.75] text-[#67758D]"
-          style={bodyFontStyle}
-        >
-          {body}
-        </p>
-        <Link
-          href={href}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-3 inline-flex text-[12px] font-semibold uppercase tracking-[0.18em] text-[#4C78E3]"
+        <span
+          className="mt-4 inline-flex text-[12px] font-semibold uppercase tracking-[0.18em] text-[#5C84D6]"
           style={bodyFontStyle}
         >
           {cta}
-        </Link>
+        </span>
       </div>
     </div>
   );
