@@ -111,20 +111,30 @@ export default function EcosystemSection() {
           </h3>
         </div>
 
-        <div className="mt-20 flex flex-col items-center">
-          <div className="flex flex-row justify-between w-240">
-            {companies.slice(0, 2).map((company) => (
-              <div key={company.title} className="w-72">
+        <div className="mt-20">
+          <div className="mx-auto grid max-w-4xl auto-rows-fr grid-cols-2 gap-4 px-4 md:hidden">
+            {companies.map((company) => (
+              <div key={company.title} className="h-full w-full">
                 <CompanyCard company={company} />
               </div>
             ))}
           </div>
-          <div className="flex flex-row justify-between w-160 mt-10">
-            {companies.slice(2, 4).map((company) => (
-              <div key={company.title} className="w-72">
-                <CompanyCard company={company} />
-              </div>
-            ))}
+
+          <div className="hidden md:flex md:flex-col md:items-center">
+            <div className="flex flex-row justify-between w-240">
+              {companies.slice(0, 2).map((company) => (
+                <div key={company.title} className="w-72">
+                  <CompanyCard company={company} />
+                </div>
+              ))}
+            </div>
+            <div className="mt-10 flex flex-row justify-between w-160">
+              {companies.slice(2, 4).map((company) => (
+                <div key={company.title} className="w-72">
+                  <CompanyCard company={company} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -149,30 +159,34 @@ function CompanyCard({
   const { title, tagline, body, cta, Icon, accent, href } = company;
 
   return (
-    <div className="group relative">
+    <div className="group relative h-full">
       <Link
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="flex min-h-[88px] items-center gap-3 rounded-[26px] border border-white/65 bg-white/54 px-5 py-4 shadow-[0_22px_60px_rgba(102,132,186,0.16)] backdrop-blur-[18px] transition-all duration-300 hover:-translate-y-1 hover:bg-white/64"
+        className="flex h-full min-h-[112px] items-center justify-between gap-2 rounded-[26px] border border-white/65 bg-white/54 px-3 py-3 shadow-[0_22px_60px_rgba(102,132,186,0.16)] backdrop-blur-[18px] transition-all duration-300 hover:-translate-y-1 hover:bg-white/64 md:min-h-[88px] md:gap-3 md:px-5 md:py-4"
       >
-        <div
-          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${accent.chip}`}
-        >
-          <Icon size={22} strokeWidth={2.1} />
+        <div className="flex min-w-0 flex-1 items-center gap-2 md:gap-3">
+          <div
+            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${accent.chip} md:h-12 md:w-12`}
+          >
+            <Icon size={18} strokeWidth={2.1} className="md:hidden" />
+            <Icon size={22} strokeWidth={2.1} className="hidden md:block" />
+          </div>
+
+          <div className="min-w-0 flex-1 text-left">
+            <h4 className="break-words text-[15px] font-extrabold leading-[1.15] tracking-[-0.03em] text-[#163E7A] font-app-heading md:text-[18px] md:leading-[1.2]">
+              {title}
+            </h4>
+          </div>
         </div>
 
-        <div className="min-w-0 flex-1 text-left">
-          <h4 className="text-[17px] font-extrabold leading-[1.2] tracking-[-0.03em] text-[#163E7A] md:text-[18px] font-app-heading">
-            {title}
-          </h4>
-        </div>
-
         <div
-          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5 ${accent.arrow}`}
+          className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5 ${accent.arrow} md:h-8 md:w-8`}
           aria-label={cta}
         >
-          <ArrowRight size={14} strokeWidth={2.2} />
+          <ArrowRight size={12} strokeWidth={2.2} className="md:hidden" />
+          <ArrowRight size={14} strokeWidth={2.2} className="hidden md:block" />
         </div>
       </Link>
 
