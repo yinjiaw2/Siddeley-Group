@@ -41,5 +41,30 @@
       "digitalManager": "Digital Marketing Manager",
       "creativeLead": "Creative Lead"
     }
+  },
+  "coreValues": {
+    "badge": "Our Values",
+    "titleBefore": "The principles",
+    "titleAccent": " that guide us",
+    "titleAfter": "",
+    "subtitle": "Six commitments that shape every decision we make — from how we advise to how we deliver.",
+    "value1Number": "01",
+    "value1Title": "Integrity",
+    "value1Desc": "We operate with full transparency. Every recommendation and every conversation reflects what we actually believe, not what is convenient to say.",
+    "value2Number": "02",
+    "value2Title": "Rigour",
+    "value2Desc": "We are disciplined by evidence. Every decision we make is backed by commercial logic, market data, and an honest evaluation of what works.",
+    "value3Number": "03",
+    "value3Title": "Creativity",
+    "value3Desc": "We approach every brief with genuine curiosity to find ideas that are both unexpected and commercially grounded — solutions that move people and drive business.",
+    "value4Number": "04",
+    "value4Title": "Long-term Thinking",
+    "value4Desc": "We build for durability, not quick wins. Our partnerships are designed to compound in value over time, not be consumed in a single campaign cycle.",
+    "value5Number": "05",
+    "value5Title": "Accountability",
+    "value5Desc": "We own our outcomes. When things go well, we analyse why. When they do not, we say so honestly and use that honesty to get sharper.",
+    "value6Number": "06",
+    "value6Title": "Impact",
+    "value6Desc": "Growth only means something when it is measurable. We track what matters, report with clarity, and continuously push to improve what we deliver."
   }
 }

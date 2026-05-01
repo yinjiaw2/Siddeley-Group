@@ -41,5 +41,30 @@
       "digitalManager": "数字营销经理",
       "creativeLead": "创意负责人"
     }
+  },
+  "coreValues": {
+    "badge": "核心价值观",
+    "titleBefore": "指引我们前行的",
+    "titleAccent": "核心准则",
+    "titleAfter": "",
+    "subtitle": "六项承诺，塑造我们每一个决策——从如何给出建议，到如何交付成果。",
+    "value1Number": "01",
+    "value1Title": "诚信",
+    "value1Desc": "我们以完全的透明度开展业务。每一项建议、每一次对话，都如实反映我们真正的判断，而非便宜行事。",
+    "value2Number": "02",
+    "value2Title": "严谨",
+    "value2Desc": "我们以证据为准绳。每一个决策背后，都有清晰的商业逻辑、市场数据与客观评估作为支撑。",
+    "value3Number": "03",
+    "value3Title": "创意",
+    "value3Desc": "我们以真诚的好奇心对待每一个需求，寻找既出人意料又具有商业价值的创意——既能打动人心，也能驱动业务增长。",
+    "value4Number": "04",
+    "value4Title": "长远眼光",
+    "value4Desc": "我们着眼于持久价值，而非短期收益。我们与客户建立的合作关系，旨在随时间复利增值，而非在单一营销周期内消耗殆尽。",
+    "value5Number": "05",
+    "value5Title": "担当",
+    "value5Desc": "我们对结果负责。事情顺利时，我们分析原因；遇到挑战时，我们坦诚面对，并以此为动力持续精进。",
+    "value6Number": "06",
+    "value6Title": "影响力",
+    "value6Desc": "增长只有可衡量才有意义。我们追踪关键指标，清晰汇报，并持续推动每一次交付质量的提升。"
   }
 }
