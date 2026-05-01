@@ -13,5 +13,24 @@
     "item3Desc": "Shared context means every asset builds on the last. Creative insights sharpen the next campaign, and data from execution continuously refines the strategy.",
     "item4Title": "Clear Accountability",
     "item4Desc": "With one team across the full journey, there is no finger-pointing. Every outcome comes with a clear owner and a direct path forward."
+  },
+  "clientJourney": {
+    "badge": "The Client Journey",
+    "titleBefore": "From first call to",
+    "titleAccent": " final delivery",
+    "titleAfter": "",
+    "subtitle": "A clear, four-stage pipeline that moves from understanding your goals to executing with precision — every step defined, every outcome owned.",
+    "step1Number": "01",
+    "step1Title": "Consultation",
+    "step1Desc": "We start by listening — a focused conversation to understand your business, goals, and current challenges. This stage sets the brief and aligns our team with what matters most to you.",
+    "step2Number": "02",
+    "step2Title": "Strategy",
+    "step2Desc": "We design a bespoke roadmap built on your objectives. From positioning to platform priorities, every decision is grounded in commercial logic and tailored to your market.",
+    "step3Number": "03",
+    "step3Title": "Fulfillment",
+    "step3Desc": "Our integrated team executes across all relevant touchpoints — creative, digital, and operational. Quality and consistency are held to account at every deliverable.",
+    "step4Number": "04",
+    "step4Title": "Legal Execution",
+    "step4Desc": "From contracts and compliance to formal agreements and documentation, we ensure every engagement is properly structured, protected, and built to last."
   }
 }

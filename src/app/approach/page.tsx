@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SiddeleyAdvantageSection from "@/components/approach/SiddeleyAdvantageSection";
+import ClientJourneySection from "@/components/approach/ClientJourneySection";
 
 export const metadata: Metadata = {
   title: "Our Approach",
@@ -10,6 +11,7 @@ export default function ApproachPage() {
   return (
     <>
       <SiddeleyAdvantageSection />
+      <ClientJourneySection />
     </>
   );
 }
