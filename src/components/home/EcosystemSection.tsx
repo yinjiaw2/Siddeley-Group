@@ -83,11 +83,34 @@ export default function EcosystemSection() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.10)_0%,rgba(255,255,255,0.02)_28%,rgba(255,255,255,0.08)_100%)]" />
 
         <div className="relative z-10 text-center">
-          <div className="mx-auto mb-4 w-fit">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#FFF1D6]/80 text-[#D99522] shadow-[0_14px_34px_rgba(217,149,34,0.22)] backdrop-blur-[12px] transition duration-300 group-hover:scale-[1.04] group-hover:bg-[#FFF5E4]/92 group-hover:shadow-[0_16px_40px_rgba(217,149,34,0.3)]">
-              <Boxes size={34} strokeWidth={2.1} />
+          <HoverCard openDelay={80} closeDelay={120}>
+            <div className="mx-auto flex w-fit flex-col items-center px-4 py-3">
+              <HoverCardTrigger asChild>
+                <div className="mb-4 flex h-16 w-16 cursor-default items-center justify-center rounded-full bg-[#FFF1D6]/80 text-[#D99522] shadow-[0_14px_34px_rgba(217,149,34,0.22)] backdrop-blur-[12px] transition duration-300 hover:-translate-y-1 hover:scale-[1.04] hover:bg-[#FFF5E4]/92 hover:shadow-[0_16px_40px_rgba(217,149,34,0.3)]">
+                  <Boxes size={34} strokeWidth={2.1} />
+                </div>
+              </HoverCardTrigger>
+
+              <div className="text-[14px] font-semibold uppercase tracking-[0.32em] text-[#D19B2F] md:text-[16px] font-app-body">
+                {t("mainBadge")}
+              </div>
+              <div className="mt-6 inline-flex items-center text-[13px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[14px] font-app-body">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
+                <span className="ml-1">{t("mainTagline")}</span>
+                <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
+              </div>
+
+              <h3 className="mt-4 text-[48px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[72px] font-app-heading">
+                {t("mainTitle")}
+              </h3>
             </div>
-            <div className="pointer-events-none absolute left-1/2 top-[calc(100%+12px)] z-40 w-[280px] -translate-x-1/2 rounded-[22px] border border-white/80 bg-white/84 p-4 text-left opacity-0 shadow-[0_20px_48px_rgba(94,128,184,0.18)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-2 group-hover:opacity-100">
+
+            <HoverCardContent
+              side="bottom"
+              align="center"
+              sideOffset={12}
+              className="hidden w-[280px] rounded-[22px] border border-white/80 bg-white/84 p-4 text-left shadow-[0_20px_48px_rgba(94,128,184,0.18)] backdrop-blur-[18px] md:block"
+            >
               <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#D19B2F] font-app-body">
                 {t("mainBadge")}
               </p>
@@ -97,21 +120,8 @@ export default function EcosystemSection() {
               <p className="mt-2 text-[13px] leading-[1.65] text-[#6F7E98] font-app-body">
                 {t("mainSubtitle")}
               </p>
-            </div>
-          </div>
-
-          <div className="text-[14px] font-semibold uppercase tracking-[0.32em] text-[#D19B2F] md:text-[16px] font-app-body">
-            {t("mainBadge")}
-          </div>
-          <div className="mt-6 inline-flex items-center text-[13px] font-semibold uppercase tracking-[0.28em] text-[#6E85B5] md:text-[14px] font-app-body">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
-            <span className="ml-1">{t("mainTagline")}</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-[#D9A132]" />
-          </div>
-
-          <h3 className="mt-4 text-[48px] font-extrabold leading-none tracking-[-0.04em] text-[#163E7A] md:text-[72px] font-app-heading">
-            {t("mainTitle")}
-          </h3>
+            </HoverCardContent>
+          </HoverCard>
         </div>
 
         <div className="mt-20">

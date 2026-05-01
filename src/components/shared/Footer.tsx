@@ -41,12 +41,9 @@ export default function Footer() {
             <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
               {serviceKeys.map((key) => (
                 <li key={key}>
-                  <Link
-                    href={t(`serviceLinks.${key}.href`)}
-                    className="text-sm text-white/65 transition-colors duration-200 hover:text-[#F5C400]"
-                  >
+                  <span className="text-sm text-white/65">
                     {t(`serviceLinks.${key}.label`)}
-                  </Link>
+                  </span>
                 </li>
               ))}
             </ul>

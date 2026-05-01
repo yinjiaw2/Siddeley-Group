@@ -9,7 +9,6 @@ import {
   Video,
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
 
 export default function ServiceSection() {
   const t = useTranslations("home");
@@ -103,11 +102,9 @@ export default function ServiceSection() {
 
         <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/10 md:grid-cols-2 xl:grid-cols-3">
           {cards.map((card) => (
-            <Link
+            <article
               key={card.key}
-              href={`/services/${card.key}`}
               className="group relative block min-h-[320px] overflow-hidden bg-[#1A1A1A] px-9 py-10"
-              style={{ textDecoration: "none" }}
             >
               <div className="absolute inset-0 z-0 origin-bottom scale-y-0 bg-[#F5C400] transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-y-100" />
 
@@ -143,7 +140,7 @@ export default function ServiceSection() {
                   </div>
                 ) : null}
               </div>
-            </Link>
+            </article>
           ))}
         </div>
       </div>

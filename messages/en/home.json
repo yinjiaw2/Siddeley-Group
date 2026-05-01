@@ -20,16 +20,25 @@
     "stat4Label": "Strategic Support "
   },
   "groupIntro": {
-    "badge": "Group Overview",
-    "titleBefore": "Built on",
-    "titleAccent": " strategy, creativity",
-    "titleAfter": " and long-term growth",
+    "badge": "About The Group",
+    "titleBefore": "A Global Group",
+    "titleAccent": " with Purpose",
+    "titleAfter": "",
     "paragraphs": [
-      "Siddeley Group brings together brand strategy, digital marketing, and business transformation under one integrated structure, helping ambitious companies move with more clarity and momentum.",
-      "From market positioning and creative direction to campaign execution and digital growth systems, we work across the full journey to turn ideas into measurable commercial outcomes.",
-      "Our team combines local market understanding with a global perspective, building partnerships that are practical, disciplined, and designed to scale with every stage of a brand's evolution."
+      "Siddeley Group is a diversified international group with a clear mission: to connect talent with opportunity and empower businesses through trusted solutions.",
+      "Through our ecosystem of specialised companies, we deliver end-to-end services across career development, employer partnerships, migration strategy, and brand growth."
     ],
-    "imageAlt": "Siddeley Group overview"
+    "imageAlt": "Siddeley Group global ecosystem graphic",
+    "cta": "Explore Our Ecosystem",
+    "panelEyebrow": "Connected Across Borders",
+    "panelTitle": "Global Reach, Integrated Support",
+    "panelBody": "A coordinated network of specialist businesses helping people and organisations move forward with clarity, trust, and measurable outcomes.",
+    "pillar1Title": "People First",
+    "pillar1Body": "We put people at the centre of everything we do.",
+    "pillar2Title": "Impact Driven",
+    "pillar2Body": "We deliver measurable outcomes that matter.",
+    "pillar3Title": "Built on Trust",
+    "pillar3Body": "We act with integrity, transparency and respect."
   },
   "ecosystem": {
     "badge": "Ecosystem",
