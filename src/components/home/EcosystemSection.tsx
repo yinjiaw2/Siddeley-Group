@@ -190,7 +190,7 @@ function CompanyCard({
         </div>
       </Link>
 
-      <div className="pointer-events-none absolute left-1/2 top-[calc(100%-8px)] z-30 w-[300px] -translate-x-1/2 rounded-[24px] border border-white/80 bg-white/78 p-5 opacity-0 shadow-[0_22px_54px_rgba(94,128,184,0.18)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-3 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-3 group-focus-within:opacity-100">
+      <div className="pointer-events-none absolute left-1/2 top-[calc(100%-8px)] z-50 w-[300px] -translate-x-1/2 rounded-[24px] border border-white/80 bg-white/78 p-5 opacity-0 shadow-[0_22px_54px_rgba(94,128,184,0.18)] backdrop-blur-[18px] transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-3 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-3 group-focus-within:opacity-100">
         <h5 className="text-[18px] font-extrabold tracking-[-0.02em] text-[#163E7A] font-app-heading">
           {title}
         </h5>

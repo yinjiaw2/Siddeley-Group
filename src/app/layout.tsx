@@ -4,13 +4,15 @@ import {
   Inter,
   Noto_Sans_SC,
   Noto_Serif_SC,
-  Playfair_Display,
-} from "next/font/google";
+  Playfair_Display, Geist } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/shared/NavBar";
 import Footer from "@/components/shared/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -52,7 +54,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${inter.variable} ${geistMono.variable} ${notoSansSc.variable} ${playfairDisplay.variable} ${notoSerifSc.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", inter.variable, geistMono.variable, notoSansSc.variable, playfairDisplay.variable, notoSerifSc.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider>
