@@ -131,12 +131,6 @@ export default function EcosystemSection() {
             </div>
           </div>
 
-          <div className="relative z-20 grid gap-5 px-4 pb-14 pt-[49%] md:grid-cols-2 md:px-8 md:pt-[44%] lg:hidden">
-            {companies.map((company) => (
-              <CompanyCard key={company.title} company={company} />
-            ))}
-          </div>
-
           <div className="absolute inset-0 z-20 hidden lg:block">
             {companies.map((company) => (
               <div key={company.title} className="group">
