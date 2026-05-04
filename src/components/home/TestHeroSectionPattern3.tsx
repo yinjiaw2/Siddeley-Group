@@ -27,24 +27,24 @@ export default function TestHeroSectionPattern3() {
       {/* =========================================
           HERO SECTION 
           ========================================= */}
-      {/* Background: Rich Charcoal / Deep Slate (#1E293B) */}
-      <section className="relative flex min-h-[85vh] w-full flex-col items-center justify-center overflow-hidden bg-[#1E293B] px-6 py-24 text-center md:px-10 lg:px-16">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(241,245,249,0.08),transparent_50%)]" />
+      {/* Background: Ghost Gray (#F1F5F9) */}
+      <section className="relative flex min-h-[85vh] w-full flex-col items-center justify-center overflow-hidden bg-[#F1F5F9] px-6 py-24 text-center md:px-10 lg:px-16">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(30,41,59,0.05),transparent_50%)]" />
 
         <div className="relative z-10 max-w-4xl">
-          <div className="mb-8 flex items-center justify-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-[#F1F5F9]">
-            <span className="h-px w-10 bg-[#F1F5F9]/50"></span>
+          <div className="mb-8 flex items-center justify-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-[#1D4ED8]">
+            <span className="h-px w-10 bg-[#1D4ED8]/50"></span>
             The Monochromatic Slate
-            <span className="h-px w-10 bg-[#F1F5F9]/50"></span>
+            <span className="h-px w-10 bg-[#1D4ED8]/50"></span>
           </div>
 
-          {/* Text: Pure White (#FFFFFF) & Steel Blue (#1D4ED8) */}
-          <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-[#FFFFFF] md:text-6xl lg:text-7xl">
+          {/* Text: Rich Charcoal (#1E293B) & Steel Blue (#1D4ED8) */}
+          <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-[#1E293B] md:text-6xl lg:text-7xl">
             Ultra-Minimalist,{" "}
             <span className="text-[#1D4ED8]">Tech-Forward</span>
           </h1>
 
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-[#F1F5F9] md:text-xl leading-relaxed opacity-90">
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-[#1E293B]/80 md:text-xl leading-relaxed">
             A purely greyscale-to-blue approach. Letting the structure of our
             frameworks and high-quality deliverables do all the talking.
           </p>
