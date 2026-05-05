@@ -86,7 +86,7 @@ export default function SampleHeroSectionImplement() {
 
           <div className="flex flex-1 items-center py-12 md:py-16">
             <div className="max-w-[38rem]">
-              <h1 className="font-app-heading text-9xl leading-[0.92] tracking-[-0.055em] text-white">
+              <h1 className="font-app-heading text-7xl leading-[0.92] tracking-[-0.055em] text-white">
                 Hello, we&apos;re Siddeley Group
               </h1>
 
@@ -96,7 +96,7 @@ export default function SampleHeroSectionImplement() {
               </p>
 
               <div className="mt-14">
-                <p className="font-app-heading text-[1.9rem] italic leading-none text-white/90">
+                <p className="font-app-heading text-3xl italic leading-none text-white/90">
                   This is what we are especially focused on
                 </p>
 
@@ -128,7 +128,7 @@ export default function SampleHeroSectionImplement() {
                   className="h-9 w-9 text-white/90 transition-transform duration-300 group-hover:-translate-x-1 group-hover:translate-y-1 md:h-12 md:w-12"
                   strokeWidth={1.4}
                 />
-                <span className="font-app-heading text-[2.2rem] leading-none tracking-[-0.04em] text-white md:text-[3.5rem]">
+                <span className="font-app-heading text-3xl leading-none tracking-[-0.04em] text-white">
                   {panel.title}
                 </span>
               </div>
