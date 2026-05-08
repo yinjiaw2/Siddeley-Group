@@ -10,11 +10,13 @@ import TestHeroSectionPattern3 from "@/components/home/TestHeroSectionPattern3";
 import SampleHeroSectionImplement from "@/components/home/SampleHeroSectionImplement";
 import SampleHeroSectionCGI from "@/components/home/SampleHeroSectionCGI";
 import SampleHeroSectionRevolut from "@/components/home/SampleHeroSectionRevolut";
+import SampleHero3D from "@/components/home/SampleHero3D";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <SampleHero3D />
       <SampleHeroSectionBCG />
       <SampleHeroSectionImplement />
       <SampleHeroSectionCGI />
