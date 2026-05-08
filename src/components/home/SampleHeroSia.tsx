@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Spline from "@splinetool/react-spline";
 
-export default function SampleHero3D() {
+export default function SampleHeroSia() {
   return (
     <section className="relative flex h-screen w-full overflow-hidden bg-background text-white">
       <div className="absolute inset-0">
