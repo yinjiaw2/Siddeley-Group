@@ -153,11 +153,7 @@ export default function SampleHeroSectionCGI() {
                   {column.tags.map((tag) => (
                     <span
                       key={tag}
-                      className={`rounded-full border px-3 py-2 text-sm ${
-                        tag === "Managed Delivery"
-                          ? "border-violet-700 bg-violet-700 text-white"
-                          : "border-border bg-white text-foreground/85"
-                      }`}
+                      className="rounded-full border border-border bg-white px-3 py-2 text-sm text-foreground/85 transition-colors duration-300 hover:border-[#200a58] hover:bg-[#200a58] hover:text-white"
                     >
                       {tag}
                     </span>
