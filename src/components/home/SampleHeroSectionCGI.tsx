@@ -63,7 +63,7 @@ export default function SampleHeroSectionCGI() {
             <ChevronLeft className="h-6 w-6" strokeWidth={2.25} />
           </button>
 
-          <div className="flex flex-1 flex-col shadow-sm lg:flex-row mx-4">
+          <div className="mx-4 flex flex-1 flex-col lg:flex-row">
             <div className="flex flex-1 flex-col justify-center gap-5 bg-secondary px-5 py-7 sm:px-7 sm:py-8 lg:px-8 lg:py-8">
               <div className="flex max-w-2xl flex-col gap-4">
                 <p className="font-app-body text-sm font-semibold uppercase tracking-widest text-violet-900">
@@ -123,7 +123,7 @@ export default function SampleHeroSectionCGI() {
           </button>
         </div>
 
-        <div className="flex flex-col  bg-background xl:flex-row">
+        <div className="flex flex-col  bg-background px-6 xl:flex-row">
           {capabilityColumns.map((column, index) => {
             const Icon = column.icon;
 
