@@ -8,6 +8,7 @@ import TestHeroSectionPattern1 from "@/components/home/TestHeroSectionPattern1";
 import TestHeroSectionPattern2 from "@/components/home/TestHeroSectionPattern2";
 import TestHeroSectionPattern3 from "@/components/home/TestHeroSectionPattern3";
 import SampleHeroSectionImplement from "@/components/home/SampleHeroSectionImplement";
+import SampleHeroSectionCGI from "@/components/home/SampleHeroSectionCGI";
 import SampleHeroSectionRevolut from "@/components/home/SampleHeroSectionRevolut";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSection />
       <SampleHeroSectionBCG />
       <SampleHeroSectionImplement />
+      <SampleHeroSectionCGI />
       <SampleHeroSectionRevolut />
       <TestHeroSectionPattern1 />
       <TestHeroSectionPattern2 />
